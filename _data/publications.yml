@@ -9,7 +9,7 @@ main:
     image: ./assets/img/origin.gif
 
   - title: Human POSEitioning System - Human Pose Estimation and Self-Localization in Large 3D Scenes
-    authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
+    authors: Vladimir Guzov* <strong>Aymen Mir*</strong>, Torsten Stattler,  Gerard Pons-Moll
     conference_short: CVPR 
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
     pdf: https://arxiv.org/pdf/2306.00988.pdf
@@ -19,18 +19,18 @@ main:
 
 
   - title: Neural Unsigned Distance Fields for Implicit Function Learning
-    authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
-    conference_short: 3DV 
-    conference: International Conference on 3D Visison <strong>(3DV)</strong>, 2023.
+    authors: Julian Chibane <strong>Aymen Mir</strong>, Gerard Pons-Moll
+    conference_short: NeurIPS 
+    conference: Advances in Neural Information Processing <strong>(NeurIPS)</strong>, 2021.
     pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/miraymen/origin
-    image: ./assets/img/origin.gif
+    code: https://github.com/miraymen/ndf-1
+    image: ./assets/img/ndf.gif
 
 
-  - title: Generating Continual Human Motion in Diverse 3D Scenes
-    authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
-    conference_short: 3DV 
-    conference: International Conference on 3D Visison <strong>(3DV)</strong>, 2023.
+  - title: Learning to Transfer Texture from Clothing Images to 3D Humans
+    authors: <strong>Aymen Mir</strong>, Thiemo Alldieck, Gerard Pons-Moll
+    conference_short: CVPR 
+    conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/miraymen/origin
-    image: ./assets/img/origin.gif
+    code: https://github.com/miraymen/pix2surf
+    image: ./assets/img/pix2surf.gif
