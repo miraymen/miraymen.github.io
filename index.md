@@ -14,9 +14,11 @@ I am a Ph.D. student in 3D Computer Vision at the University of Tubingen and the
 
 ## News
 
-- **[Oct. 2023]** Paper accepted at 3DV 2023.
+- **[Oct. 2023]** Our paper on Motion Synthesis was accepted at 3DV 2023.
 - **[Feb. 2023]** Website Online.
 
 {% include_relative _includes/publications.md %}
 
 {% include_relative _includes/services.md %}
+
+{% include_relative _includes/teaching.md %}
