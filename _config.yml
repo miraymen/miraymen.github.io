@@ -8,13 +8,13 @@ email: aymen.mir@uni-tuebingen.de
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: Computer Vision, Computer Graphics
 description: Ph.D student in 3D Computer Vision.
-canonical: https://minimal-light-theme.yliu.me/
+canonical: miraymen.github.io
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
 google_scholar: https://scholar.google.com/citations?user=Sjnv-1cAAAAJ&hl=en
 github_link: https://github.com/miraymen
-youtube_channel: https://www.youtube.com/@aymenmir
+youtube: https://www.youtube.com/@aymenmir
 linkedin: https://www.linkedin.com/in/aymen-mir-6b68882a4
 cv_link: assets/files/mir_resume.pdf
 
