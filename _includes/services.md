@@ -8,12 +8,15 @@
   <li><a href="https://eccv2022.ecva.net/"><autocolor>European Conference on Computer Vision (ECCV) 2020-2024</autocolor></a></li>
   <li><a href="https://3dvconf.github.io/"><autocolor>IEEE International Conference on 3D Vision 2020-2024</autocolor></a></li>
   <li><a href="https://3dvconf.github.io/"><autocolor>SIGGRAPH/SIGGRAPH Asia 2022-2024</autocolor></a></li>
-
 </ul>
 
 <h4 style="margin:0 10px 0;">Journal Reviewers</h4>
-
 <ul style="margin:0 0 20px;">
   <li><a href="https://www.computer.org/csdl/journal/tp"><autocolor>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</autocolor></a></li>
   <li><a href="https://www.springer.com/journal/11263"><autocolor>International Journal of Computer Vision (IJCV)</autocolor></a></li>
+</ul>
+
+<h4 style="margin:0 10px 0;">Workshop Organization</h4>
+<ul style="margin:0 0 20px;">
+  <li><a href="https://virtualhumans.mpi-inf.mpg.de/3DPW_Challenge/"><autocolor>3D Poses in the Wild Workshop in conjuction with ECCV 2020</autocolor></a></li>
 </ul>
