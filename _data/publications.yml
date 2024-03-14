@@ -1,43 +1,36 @@
 main:
 
   - title: Generating Continual Human Motion in Diverse 3D Scenes
-    authors: <strong>Aymen Mir*</strong>, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
+    authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
     conference_short: 3DV 
-    conference: International Conference on 3D Visison <strong>(MICCAI)</strong>, 2023.
+    conference: International Conference on 3D Visison <strong>(3DV)</strong>, 2023.
     pdf: https://arxiv.org/pdf/2306.00988.pdf
     code: https://github.com/miraymen/origin
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
+    image: ./assets/img/origin.gif
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Best Paper Finalist
-    image: ./assets/img/teaser_example.png
-
-
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
+  - title: Human POSEitioning System - Human Pose Estimation and Self-Localization in Large 3D Scenes
+    authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
+    conference_short: CVPR 
+    conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
     pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+    code: https://github.com/miraymen/hps
+    image: ./assets/img/hps.gif
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+
+
+  - title: Neural Unsigned Distance Fields for Implicit Function Learning
+    authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
+    conference_short: 3DV 
+    conference: International Conference on 3D Visison <strong>(3DV)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2306.00988.pdf
+    code: https://github.com/miraymen/origin
+    image: ./assets/img/origin.gif
+
+
+  - title: Generating Continual Human Motion in Diverse 3D Scenes
+    authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
+    conference_short: 3DV 
+    conference: International Conference on 3D Visison <strong>(3DV)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2306.00988.pdf
+    code: https://github.com/miraymen/origin
+    image: ./assets/img/origin.gif
