@@ -26,4 +26,4 @@ I am a Ph.D. student in 3D Computer Vision at the University of Tubingen and the
 
 ## Talks
 
-- *[Jan. 2024]* CAIR Vision group at KAUST.
+- Jan. 2024 - CAIR Vision group at KAUST.
