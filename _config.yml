@@ -14,15 +14,15 @@ canonical: https://minimal-light-theme.yliu.me/
 # If you don't need one of them, you may delete the corresponding line.
 google_scholar: https://scholar.google.com/citations?user=Sjnv-1cAAAAJ&hl=en
 github_link: https://github.com/miraymen
+youtube: https://www.youtube.com/@aymenmir
 linkedin: https://www.linkedin.com/in/aymen-mir-6b68882a4
-
-# cv_link: assets/files/curriculum_vitae.pdf
+cv_link: assets/files/mir_resume.pdf
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+avatar: ./assets/img/image.jpg
+favicon: ./assets/img/image.jpg
+favicon_dark: ./assets/img/image.jpg
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
@@ -42,7 +42,7 @@ font: "Serif" # or "Sans Serif"
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
+# remote_theme: yaoyao-liu/minimal-light
 
 # The following files will be removed from the generated website.
 exclude:
