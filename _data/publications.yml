@@ -15,8 +15,7 @@ main:
     pdf: https://arxiv.org/abs/2103.17265
     code: https://github.com/miraymen/hps
     image: ./assets/img/hps.gif
-    notes: 
-    Best Paper Finalist, Oral (* = equal contribution)
+    notes: Best Paper Finalist, Oral (* = equal contribution)
 
 
   - title: Neural Unsigned Distance Fields for Implicit Function Learning
