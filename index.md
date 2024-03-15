@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student in 3D Computer Vision at the University of Tubingen and the Max Planck Institute for Informatics. I am interesting in problems related the synthesis of realistic virtual humans, more specifically related to human motion capture and synthesis conditioned on a variety of modalities: the 3D environmental context of 3D humans, language. Before that, I obtained a masters degree in Computer Science from the University of Saarland, Germany.
+I am a Ph.D. student in 3D Computer Vision at the <a href="https://tuebingen.ai/"> University of Tubingen</a> and the <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning">Max Planck Institute for Informatics</a>, Germany. Before that, I obtained a Masters degree in Computer Science from the <a href="">University of Saarland</a>, Germany and a Bachelors degree in Computer Science from <a href="https://nitsri.ac.in/Department/Deptindex.aspx?page=a&ItemID=cs&nDeptID=cs">N.I.T Srinagar, India</a>. I am interesting in problems related to designing and realistic vrirtual humans: more specifically capturing human motion from multiple modalities - images and IMU sensors, the synthesis of human motion conditioned on a variety of modalities - the 3D environmental context of 3D humans, language. I have also worked on problems related to the appearance of digital humans.
 
 ## Research Interests
 
