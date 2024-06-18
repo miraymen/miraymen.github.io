@@ -13,7 +13,7 @@ I am a Ph.D. student at the <a href="https://tuebingen.ai/"> University of Tubin
 - **Machine Learning:** Generative Modelling
 
 ## News
-
+- **[Jun. 2024]** We are organizing the <a href="https://3dcompat-dataset.org/workshop/C3DV24/">3D Compositional Workshop</a> at CVPR 2024. We are accepting papers
 - **[Oct. 2023]** Our paper on Motion Synthesis was accepted at 3DV 2023.
 - **[Feb. 2023]** Website Online.
 

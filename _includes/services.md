@@ -19,5 +19,6 @@
 
 <h4 style="margin:0 10px 0;">Workshop Organization</h4>
 <ul style="margin:0 0 20px;">
+  <li><a href="https://3dcompat-dataset.org/workshop/C3DV24/"><autocolor>Compositional 3D Vision Workshop in conjuction with CVPR 2024</autocolor></a></li>
   <li><a href="https://virtualhumans.mpi-inf.mpg.de/3DPW_Challenge/"><autocolor>3D Poses in the Wild Workshop in conjuction with ECCV 2020</autocolor></a></li>
 </ul>
