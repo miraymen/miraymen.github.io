@@ -1,5 +1,14 @@
 main:
 
+
+  - title: GASPACHO Gaussian Splatting for Controllable Humans and Objects
+    authors: <strong>Aymen Mir</strong>, Arthur Moreau, Helisa Dhamo, Zhensong Zhang, Eduardo Perez-Pellitero 
+    conference_short: arxiv 
+    conference: 
+    pdf: https://arxiv.org/abs/2304.02061
+    code: https://arxiv.org/abs/2304.02061
+    image: ./assets/img/gaspacho.gif
+
   - title: Generating Continual Human Motion in Diverse 3D Scenes
     authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
     conference_short: 3DV 
