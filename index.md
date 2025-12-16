@@ -13,6 +13,9 @@ I am a Ph.D. student at the <a href="https://tuebingen.ai/"> University of Tubin
 - **Machine Learning:** Generative Modelling
 
 ## News
+- **[Nov. 2025]** I spent a wonderful summer interning at Snap Research in NYC.
+- **[Oct. 2025]** Honoured to be recognized as a Top Reviewer at NeurIPS 2025.
+- **[Jun. 2024]** I am interning at Huawei Noah's Ark lab in London.
 - **[Jun. 2024]** We are organizing the <a href="https://3dcompat-dataset.org/workshop/C3DV24/">3D Compositional Workshop</a> at CVPR 2024.
 - **[Oct. 2023]** Our paper on Motion Synthesis was accepted at 3DV 2023.
 - **[Feb. 2023]** Website Online.
