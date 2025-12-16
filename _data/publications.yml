@@ -18,7 +18,7 @@ main:
     image: ./assets/img/fish.png
 
   - title: GASPACHO - Gaussian Splatting for Controllable Humans and Objects
-    authors: <strong>Aymen Mir</strong>, Arthur Moreau, Helisa Dhamo, Zhensong Zhang, Gerard Pons-Moll Eduardo Perez-Pellitero 
+    authors: <strong>Aymen Mir</strong>, Arthur Moreau, Helisa Dhamo, Zhensong Zhang, Gerard Pons-Moll, Eduardo Perez-Pellitero 
     conference_short:  
     conference: 
     pdf: http://arxiv.org/abs/2503.09342
