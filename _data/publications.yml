@@ -8,14 +8,6 @@ main:
     code: https://arxiv.org/abs/2511.09827
     image: ./assets/img/dgsm.png
 
-  - title: Animated 3DGS Avatars in Diverse Scenes with Consistent Lighting and Shadows
-    authors: <strong>Aymen Mir</strong>, Riza Alp Guler, Jian Wang, Gerard Pons-Moll, Bing Zhou
-    conference_short:  
-    conference: 
-    pdf: https://arxiv.org/abs/2511.09827
-    code: https://arxiv.org/abs/2511.09827
-    image: ./assets/img/dgsm.png
-
   - title: AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting
     authors: <strong>Aymen Mir</strong>, Jian Wang, Riza Alp Guler, Chuan Guo, Gerard Pons-Moll, Bing Zhou
     conference_short:  
