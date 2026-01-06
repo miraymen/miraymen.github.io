@@ -4,8 +4,8 @@ main:
     authors: <strong>Aymen Mir</strong>, Riza Alp Guler, Jian Wang, Gerard Pons-Moll, Bing Zhou
     conference_short:  
     conference: 
-    pdf: https://arxiv.org/abs/2511.09827
-    code: https://arxiv.org/abs/2511.09827
+    pdf: http://arxiv.org/abs/2601.01660
+    code: https://miraymen.github.io/dgsm/
     image: ./assets/img/dgsm.png
 
   - title: AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting
@@ -13,7 +13,7 @@ main:
     conference_short:  
     conference: 
     pdf: https://arxiv.org/abs/2511.09827
-    code: https://arxiv.org/abs/2511.09827
+    code: https://miraymen.github.io/aha/
     image: ./assets/img/aha.gif
 
   - title: FishNet++ -  Analyzing the capabilities of Multimodal Large Language Models in marine biology
