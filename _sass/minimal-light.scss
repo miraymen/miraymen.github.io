@@ -2,25 +2,31 @@
   display: flex; 
   align-items: center;}
 
+.social-icons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.4rem 1.3rem;
+}
+
 .social-icons a{
-  display:inline-block;
-  height:2.4rem;
-  width:2.4rem;
+  display:inline-flex;
+  align-items:center;
+  gap:0.45rem;
   background-color:transparent;
   color:#043361!important;
-  border-radius:100%;
-  text-align:center;
-  font-size:1.15rem;
-  line-height:2.5rem;
-  margin-right:1rem}
+  font-size:0.95rem;
+  font-weight:600;
+}
+
+.social-icons a i{
+  font-size:1.1rem;
+}
 
 @media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .social-icons a {color: #3eb7f0 !important; }}
 
 html[data-theme="dark"] .social-icons a {color: #3eb7f0 !important; }
 
-.social-icons a:last-child{margin-right:0}.social-icons a:hover{background-color:white;
-    color:black;
-    transform: scale(1.2)}
+.social-icons a:hover{color:#2496cb!important;}
     /*
     .social-icons a:after {
         content: '';
@@ -37,9 +43,7 @@ html[data-theme="dark"] .social-icons a {color: #3eb7f0 !important; }
       }
      */
 
-@media (prefers-color-scheme: dark) {html:not([data-theme="light"]) .social-icons a:last-child{margin-right:0}html:not([data-theme="light"]) .social-icons a:hover{background-color:#20212b;
-    color:black;
-    transform: scale(1.2)} 
+@media (prefers-color-scheme: dark) {html:not([data-theme="light"]) .social-icons a:hover{color:#7fcdf5!important;}
     /*
     .social-icons a:after {
         content: '';
@@ -57,11 +61,7 @@ html[data-theme="dark"] .social-icons a {color: #3eb7f0 !important; }
     */
 }
 
-html[data-theme="dark"] .social-icons a:last-child{margin-right:0}
-
-html[data-theme="dark"] .social-icons a:hover{background-color:#20212b;
-    color:black;
-    transform: scale(1.2)}
+html[data-theme="dark"] .social-icons a:hover{color:#7fcdf5!important;}
 
 .icon-button{
   background-color:white;
@@ -404,7 +404,43 @@ header {
   position:static;
   -webkit-font-smoothing:subpixel-antialiased;
   padding-top:3.0em;
-  text-align:center
+  display:flex;
+  align-items:center;
+  gap:2.2rem;
+  text-align:left;
+}
+
+header .profile-avatar {
+  flex:0 0 auto;
+}
+
+header .profile-info {
+  flex:1;
+  min-width:0;
+}
+
+header .profile-info h1 {
+  margin:0 0 10px;
+}
+
+header .profile-info p {
+  margin:0 0 12px;
+  line-height:1.55;
+  text-align:justify;
+  hyphens:auto;
+  -webkit-hyphens:auto;
+}
+
+@media (max-width: 640px) {
+  header {
+    flex-direction:column;
+    text-align:center;
+    gap:1.2rem;
+  }
+
+  .social-icons {
+    justify-content:center;
+  }
 }
 
 

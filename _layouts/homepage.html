@@ -70,67 +70,47 @@
     <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
     <div class="wrapper">
       <header>
-        
         {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
-        {% endif %}
-
-        <h1>{{ site.title }}</h1>
-
-        {% if site.position %}
-        <position style="font-size:1.10rem;">{{ site.position }}</position>
-        <br>
-        {% endif %}
-        {% if site.affiliation %}
-        <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
-        <br>
-        {% endif %}
-        {% if site.email %}
-        <email>{{ site.email }}</email>
-        {% endif %}
-
-        <br>
-        <br>
-        <div class="social-icons">
-        {% if site.google_scholar %}
-        <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
-        </a>  
-        {% endif %}
-
-        {% if site.cv_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.cv_link }}">
-          <i class="ai ai-cv" style="font-size:1.3rem;"></i>
-        </a>
-        {% endif %}
-
-        {% if site.github_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
-          <i class="fab fa-github"></i>
-        </a>
-        {% endif %}
-
-        {% if site.linkedin %}
-        <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        {% endif %}
-
-        {% if site.twitter %}
-        <a style="margin: 0 5px 0 0" href="{{ site.twitter }}">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        {% endif %}
-
-        {% if site.youtube %}
-        <a style="margin: 0 0 0 0" href="{{ site.youtube }}">
-          <i class="fab fa-youtube"></i>
-        </a>
-        {% endif %}
-        
+        <div class="profile-avatar">
+          <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
         </div>
-        <br>
+        {% endif %}
 
+        <div class="profile-info">
+          <h1>{{ site.title }}</h1>
+
+          {% include intro.html %}
+
+          <div class="social-icons">
+            {% if site.email %}
+            <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i>Email</a>
+            {% endif %}
+
+            {% if site.cv_link %}
+            <a href="{{ site.cv_link }}"><i class="ai ai-cv"></i>CV</a>
+            {% endif %}
+
+            {% if site.google_scholar %}
+            <a href="{{ site.google_scholar }}"><i class="ai ai-google-scholar"></i>Scholar</a>
+            {% endif %}
+
+            {% if site.github_link %}
+            <a href="{{ site.github_link }}"><i class="fab fa-github"></i>GitHub</a>
+            {% endif %}
+
+            {% if site.linkedin %}
+            <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            {% endif %}
+
+            {% if site.twitter %}
+            <a href="{{ site.twitter }}"><i class="fab fa-x-twitter"></i>X</a>
+            {% endif %}
+
+            {% if site.youtube %}
+            <a href="{{ site.youtube }}"><i class="fab fa-youtube"></i>YouTube</a>
+            {% endif %}
+          </div>
+        </div>
       </header>
       <section>
 
