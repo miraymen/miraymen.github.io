@@ -4,7 +4,9 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at the <a href="https://tuebingen.ai/"> University of Tübingen</a> and the <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning">Max Planck Institute for Informatics</a>, Germany, specializing in 3D Computer Vision. Before that, I obtained a Master's degree in Computer Science from the <a href="https://saarland-informatics-campus.de/en/">University of Saarland</a>, Germany, and a Bachelor's degree in Computer Science from <a href="https://nitsri.ac.in/Department/Deptindex.aspx?page=a&ItemID=cs&nDeptID=cs">N.I.T. Srinagar</a>, India. I am interested in problems related to the capture and synthesis of realistic virtual humans: specifically human motion capture from modalities such as images and IMU sensors, and the synthesis of human behaviour conditioned on 3D scenes and language.
+I am a Ph.D. student at the <a href="https://tuebingen.ai/">University of Tübingen</a> and the <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning">Max Planck Institute for Informatics</a>, where I am advised by <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a> in the <a href="https://virtualhumans.mpi-inf.mpg.de/">Real Virtual Humans</a> group. I work on the capture and synthesis of realistic virtual humans — reconstructing human motion from images and wearable sensors, animating photorealistic avatars in novel 3D scenes, and generating human behaviour conditioned on 3D scenes and language.
+
+I have interned at Snap Research in New York and at Huawei Noah's Ark Lab in London. Before my Ph.D., I obtained a Master's degree in Computer Science from <a href="https://saarland-informatics-campus.de/en/">Saarland University</a>, Germany. My research was recognized with a Best Paper Finalist award at CVPR 2021.
 
 ## News
 - **[Nov. 2025]** I spent a wonderful summer interning at Snap Research in NYC.
