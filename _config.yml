@@ -37,6 +37,9 @@ auto_dark_mode: true
 # You can use this option to choose between Serif or Sans Serif fonts.
 font: "Sans Serif" # or "Serif"
 
+# Google Analytics (GA4) Measurement ID
+google_analytics: G-BXH2966VL8
+
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
 # remote_theme: yaoyao-liu/minimal-light
