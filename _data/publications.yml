@@ -6,7 +6,7 @@ main:
     conference:
     pdf: https://arxiv.org/abs/2603.17975
     page: https://miraymen.github.io/ahoy/
-    image: ./assets/img/ahoy.gif
+    image: ./assets/img/ahoy.mp4
 
   - title: Animated 3DGS Avatars in Diverse Scenes with Consistent Lighting and Shadows
     authors: <strong>Aymen Mir</strong>, Riza Alp Guler, Jian Wang, Gerard Pons-Moll, Bing Zhou
@@ -22,9 +22,9 @@ main:
     conference: 
     pdf: https://arxiv.org/abs/2511.09827
     code: https://miraymen.github.io/aha/
-    image: ./assets/img/aha.gif
+    image: ./assets/img/aha.mp4
 
-  - title: FishNet++ -  Analyzing the capabilities of Multimodal Large Language Models in marine biology
+  - title: FishNet++ - Analyzing the capabilities of Multimodal Large Language Models in marine biology
     authors: Faizan Farooq Khan, Yousef Radwan, Eslam Abdelrahman, Abdulwahab Felemban, <strong>Aymen Mir</strong>, Nico K. Michiels, Andrew J. Temple, Michael L. Berumen, Mohamed Elhoseiny
     conference_short:  
     conference: 
@@ -35,28 +35,28 @@ main:
   - title: Generating Continual Human Motion in Diverse 3D Scenes
     authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
     conference_short: 3DV 
-    conference: International Conference on 3D Visison <strong>(3DV)</strong>, 2023.
+    conference: International Conference on 3D Vision <strong>(3DV)</strong>, 2023.
     pdf: https://arxiv.org/abs/2304.02061
     code: https://github.com/miraymen/origin
-    image: ./assets/img/origin.gif
+    image: ./assets/img/origin.mp4
 
   - title: Human POSEitioning System - Human Pose Estimation and Self-Localization in Large 3D Scenes
-    authors: Vladimir Guzov* <strong>Aymen Mir*</strong>, Torsten Stattler,  Gerard Pons-Moll
+    authors: Vladimir Guzov*, <strong>Aymen Mir*</strong>, Torsten Sattler, Gerard Pons-Moll
     conference_short: CVPR 
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
     pdf: https://arxiv.org/abs/2103.17265
     code: https://github.com/miraymen/hps
-    image: ./assets/img/hps.gif
+    image: ./assets/img/hps.mp4
     notes: Best Paper Finalist, Oral (* = equal contribution)
 
 
   - title: Neural Unsigned Distance Fields for Implicit Function Learning
-    authors: Julian Chibane <strong>Aymen Mir</strong>, Gerard Pons-Moll
+    authors: Julian Chibane, <strong>Aymen Mir</strong>, Gerard Pons-Moll
     conference_short: NeurIPS 
-    conference: Advances in Neural Information Processing <strong>(NeurIPS)</strong>, 2021.
+    conference: Advances in Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2020.
     pdf: https://arxiv.org/abs/2010.13938
     code: https://github.com/miraymen/ndf-1
-    image: ./assets/img/ndf.gif
+    image: ./assets/img/ndf.mp4
 
 
   - title: Learning to Transfer Texture from Clothing Images to 3D Humans
@@ -65,4 +65,4 @@ main:
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     pdf: https://arxiv.org/abs/2003.02050
     code: https://github.com/miraymen/pix2surf
-    image: ./assets/img/pix2surf.gif
+    image: ./assets/img/pix2surf.mp4

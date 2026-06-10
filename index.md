@@ -4,13 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at the <a href="https://tuebingen.ai/"> University of Tubingen</a> and the <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning">Max Planck Institute for Informatics</a>, Germany specializing in 3D Computer Vision. Before that, I obtained a Masters degree in Computer Science from the <a href="https://saarland-informatics-campus.de/en/">University of Saarland</a>, Germany and a Bachelors degree in Computer Science from <a href="https://nitsri.ac.in/Department/Deptindex.aspx?page=a&ItemID=cs&nDeptID=cs">N.I.T Srinagar</a>, India. I am interested in problems related to the capture and synthesis of realistic vrirtual humans: specifically human motion capture from modalities such as images and IMU sensors, and the synthesis of human behaviour conditioned on 3D scenes and language. 
-
-## Research Interests
-
-- **Computer Vision:** Pose Estimation, 3D From Images, Sensor Fusion, Human Tracking
-- **Computer Graphics:** Motion Synthesis, Digital Humans
-- **Machine Learning:** Generative Modelling
+I am a Ph.D. student at the <a href="https://tuebingen.ai/"> University of Tübingen</a> and the <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning">Max Planck Institute for Informatics</a>, Germany, specializing in 3D Computer Vision. Before that, I obtained a Master's degree in Computer Science from the <a href="https://saarland-informatics-campus.de/en/">University of Saarland</a>, Germany, and a Bachelor's degree in Computer Science from <a href="https://nitsri.ac.in/Department/Deptindex.aspx?page=a&ItemID=cs&nDeptID=cs">N.I.T. Srinagar</a>, India. I am interested in problems related to the capture and synthesis of realistic virtual humans: specifically human motion capture from modalities such as images and IMU sensors, and the synthesis of human behaviour conditioned on 3D scenes and language.
 
 ## News
 - **[Nov. 2025]** I spent a wonderful summer interning at Snap Research in NYC.
@@ -30,4 +24,4 @@ I am a Ph.D. student at the <a href="https://tuebingen.ai/"> University of Tubin
 ## Talks
 
 - Jan. 2024 - CAIR Vision group at KAUST.
-- Aug. 2023 - Amazon Research, Tubingen.
+- Aug. 2023 - Amazon Research, Tübingen.
