@@ -1,68 +1,75 @@
 main:
 
   - title: "AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors"
-    authors: <strong>Aymen Mir</strong>, Riza Alp Guler, Xiangjun Tang, Peter Wonka, Gerard Pons-Moll
+    authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://yuyujunjun.github.io/">Xiangjun Tang</a>, <a href="https://p-wonka.kaust.edu.sa/">Peter Wonka</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short:
     conference:
     pdf: https://arxiv.org/abs/2603.17975
     page: https://miraymen.github.io/ahoy/
+    bibtex: ./assets/bibtex/ahoy.bib
     image: ./assets/img/ahoy.mp4
 
   - title: Animated 3DGS Avatars in Diverse Scenes with Consistent Lighting and Shadows
-    authors: <strong>Aymen Mir</strong>, Riza Alp Guler, Jian Wang, Gerard Pons-Moll, Bing Zhou
+    authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>
     conference_short:  
     conference: 
-    pdf: http://arxiv.org/abs/2601.01660
-    code: https://miraymen.github.io/dgsm/
-    image: ./assets/img/dgsm.png
+    pdf: https://arxiv.org/abs/2601.01660
+    page: https://miraymen.github.io/dgsm/
+    bibtex: ./assets/bibtex/dgsm.bib
+    image: ./assets/img/dgsm.jpg
 
   - title: AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting
-    authors: <strong>Aymen Mir</strong>, Jian Wang, Riza Alp Guler, Chuan Guo, Gerard Pons-Moll, Bing Zhou
+    authors: <strong>Aymen Mir</strong>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://ericguo5513.github.io/">Chuan Guo</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>
     conference_short:  
     conference: 
     pdf: https://arxiv.org/abs/2511.09827
-    code: https://miraymen.github.io/aha/
+    page: https://miraymen.github.io/aha/
+    bibtex: ./assets/bibtex/aha.bib
     image: ./assets/img/aha.mp4
 
   - title: FishNet++ - Analyzing the capabilities of Multimodal Large Language Models in marine biology
-    authors: Faizan Farooq Khan, Yousef Radwan, Eslam Abdelrahman, Abdulwahab Felemban, <strong>Aymen Mir</strong>, Nico K. Michiels, Andrew J. Temple, Michael L. Berumen, Mohamed Elhoseiny
+    authors: <a href="https://faixan-khan.github.io/">Faizan Farooq Khan</a>, <a href="https://github.com/yradwan147">Yousef Radwan</a>, <a href="https://eslambakr.github.io/">Eslam Abdelrahman</a>, <a href="https://cemse.kaust.edu.sa/profiles/abdulwahab-felemban">Abdulwahab Felemban</a>, <strong>Aymen Mir</strong>, <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/biologie/institute/evolution-und-oekologie/lehrbereiche/animal-evolutionary-ecology/people/nico-michiels/">Nico K. Michiels</a>, <a href="https://reefecology.kaust.edu.sa/people/details/andrew-temple">Andrew J. Temple</a>, <a href="https://reefecology.kaust.edu.sa/people/details/prof.-michael-berumen">Michael L. Berumen</a>, <a href="https://www.mohamed-elhoseiny.com/">Mohamed Elhoseiny</a>
     conference_short:  
     conference: 
     pdf: https://arxiv.org/abs/2509.25564
-    code: https://arxiv.org/abs/2509.25564
+    bibtex: ./assets/bibtex/fishnetpp.bib
     image: ./assets/img/fish.png
 
   - title: Generating Continual Human Motion in Diverse 3D Scenes
-    authors: <strong>Aymen Mir</strong>, Xavier Puig, Angjoo Kanazawa, Gerard Pons-Moll
+    authors: <strong>Aymen Mir</strong>, <a href="https://www.xavierpuigf.com/">Xavier Puig</a>, <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: 3DV 
-    conference: International Conference on 3D Vision <strong>(3DV)</strong>, 2023.
+    conference: International Conference on 3D Vision <strong>(3DV)</strong>, 2024.
     pdf: https://arxiv.org/abs/2304.02061
     code: https://github.com/miraymen/origin
+    bibtex: ./assets/bibtex/origin.bib
     image: ./assets/img/origin.mp4
 
   - title: Human POSEitioning System - Human Pose Estimation and Self-Localization in Large 3D Scenes
-    authors: Vladimir Guzov*, <strong>Aymen Mir*</strong>, Torsten Sattler, Gerard Pons-Moll
+    authors: <a href="https://vguzov.github.io/">Vladimir Guzov</a>*, <strong>Aymen Mir*</strong>, <a href="https://tsattler.github.io/">Torsten Sattler</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: CVPR 
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
     pdf: https://arxiv.org/abs/2103.17265
     code: https://github.com/miraymen/hps
+    bibtex: ./assets/bibtex/hps.bib
     image: ./assets/img/hps.mp4
     notes: Best Paper Finalist, Oral (* = equal contribution)
 
 
   - title: Neural Unsigned Distance Fields for Implicit Function Learning
-    authors: Julian Chibane, <strong>Aymen Mir</strong>, Gerard Pons-Moll
+    authors: <a href="https://virtualhumans.mpi-inf.mpg.de/people/Chibane.html">Julian Chibane</a>, <strong>Aymen Mir</strong>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: NeurIPS 
     conference: Advances in Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2020.
     pdf: https://arxiv.org/abs/2010.13938
     code: https://github.com/miraymen/ndf-1
+    bibtex: ./assets/bibtex/ndf.bib
     image: ./assets/img/ndf.mp4
 
 
   - title: Learning to Transfer Texture from Clothing Images to 3D Humans
-    authors: <strong>Aymen Mir</strong>, Thiemo Alldieck, Gerard Pons-Moll
+    authors: <strong>Aymen Mir</strong>, <a href="https://research.google/people/107250/">Thiemo Alldieck</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: CVPR 
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     pdf: https://arxiv.org/abs/2003.02050
     code: https://github.com/miraymen/pix2surf
+    bibtex: ./assets/bibtex/pix2surf.bib
     image: ./assets/img/pix2surf.mp4
