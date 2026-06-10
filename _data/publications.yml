@@ -64,6 +64,7 @@ main:
     conference_short: 3DV 
     conference: International Conference on 3D Vision <strong>(3DV)</strong>, 2024.
     pdf: https://arxiv.org/abs/2304.02061
+    page: https://virtualhumans.mpi-inf.mpg.de/origin/
     code: https://github.com/miraymen/origin
     bibtex: |
       @inproceedings{mir2024continual,
@@ -80,6 +81,7 @@ main:
     conference_short: CVPR 
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
     pdf: https://arxiv.org/abs/2103.17265
+    page: https://virtualhumans.mpi-inf.mpg.de/hps/
     code: https://github.com/miraymen/hps
     bibtex: |
       @inproceedings{guzov2021hps,
@@ -97,6 +99,7 @@ main:
     conference_short: NeurIPS 
     conference: Advances in Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2020.
     pdf: https://arxiv.org/abs/2010.13938
+    page: https://virtualhumans.mpi-inf.mpg.de/ndf/
     code: https://github.com/miraymen/ndf-1
     bibtex: |
       @inproceedings{chibane2020ndf,
@@ -113,6 +116,7 @@ main:
     conference_short: CVPR 
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     pdf: https://arxiv.org/abs/2003.02050
+    page: https://virtualhumans.mpi-inf.mpg.de/pix2surf/
     code: https://github.com/miraymen/pix2surf
     bibtex: |
       @inproceedings{mir2020pix2surf,
