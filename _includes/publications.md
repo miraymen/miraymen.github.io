@@ -45,7 +45,10 @@
       {% endif %}
     </div>
     {% if link.bibtex %}
-    <pre class="bibref">{{ link.bibtex }}</pre>
+    <div class="bibref-box">
+      <button class="bib-copy" type="button" aria-label="Copy BibTeX" title="Copy BibTeX"><i class="far fa-copy"></i></button>
+      <pre class="bibref">{{ link.bibtex }}</pre>
+    </div>
     {% endif %}
   </div>
 </div>
@@ -62,8 +65,18 @@
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll(".bibtex-toggle").forEach(function(btn) {
     btn.addEventListener("click", function() {
-      var pre = btn.closest(".col-sm-9").querySelector(".bibref");
-      if (pre) pre.style.display = (pre.style.display === "block") ? "none" : "block";
+      var box = btn.closest(".col-sm-9").querySelector(".bibref-box");
+      if (box) box.style.display = (box.style.display === "block") ? "none" : "block";
+    });
+  });
+  document.querySelectorAll(".bib-copy").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var pre = btn.parentNode.querySelector(".bibref");
+      navigator.clipboard.writeText(pre.textContent.trim()).then(function() {
+        var icon = btn.querySelector("i");
+        icon.className = "fas fa-check";
+        setTimeout(function() { icon.className = "far fa-copy"; }, 1500);
+      });
     });
   });
 });

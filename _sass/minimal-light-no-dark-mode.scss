@@ -553,3 +553,31 @@ section p, section ul, section ol {
 .image.avatar img {
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2)) drop-shadow(0 6px 14px rgba(0, 0, 0, 0.15));
 }
+
+.bibref-box {
+  position: relative;
+  display: none;
+}
+
+.bibref-box .bibref {
+  display: block;
+}
+
+.bib-copy {
+  position: absolute;
+  top: 16px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  color: #888;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 4px 7px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.bib-copy:hover {
+  color: #043361;
+  background-color: rgba(0, 0, 0, 0.06);
+}

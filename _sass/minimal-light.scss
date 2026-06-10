@@ -720,3 +720,51 @@ html[data-theme="dark"] #theme-toggle {
 html[data-theme="dark"] #theme-toggle:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+.bibref-box {
+  position: relative;
+  display: none;
+}
+
+.bibref-box .bibref {
+  display: block;
+}
+
+.bib-copy {
+  position: absolute;
+  top: 16px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  color: #888;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 4px 7px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.bib-copy:hover {
+  color: #043361;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .bib-copy {
+    color: #aaa;
+  }
+
+  html:not([data-theme="light"]) .bib-copy:hover {
+    color: #3eb7f0;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+html[data-theme="dark"] .bib-copy {
+  color: #aaa;
+}
+
+html[data-theme="dark"] .bib-copy:hover {
+  color: #3eb7f0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
