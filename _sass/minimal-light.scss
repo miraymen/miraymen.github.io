@@ -15,7 +15,7 @@
   white-space:nowrap;
   position:relative;
   background-color:transparent;
-  color:#444!important;
+  color:#557a9e!important;
   font-size:0.82rem;
   font-weight:600;
 }
@@ -60,9 +60,9 @@ html[data-theme="dark"] .social-icons a .tooltip-text{
   font-size:0.95rem;
 }
 
-@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .social-icons a {color: #c9cacd !important; }}
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .social-icons a {color: #8fb3d9 !important; }}
 
-html[data-theme="dark"] .social-icons a {color: #c9cacd !important; }
+html[data-theme="dark"] .social-icons a {color: #8fb3d9 !important; }
 
 .social-icons a:hover{color:#1772d0!important;}
     /*
