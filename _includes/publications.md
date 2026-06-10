@@ -35,7 +35,7 @@
       <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
       {% endif %}
       {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      <a class="btn btn-sm z-depth-0 fakelink bibtex-toggle" role="button" style="font-size:12px;">BibTeX</a>
       {% endif %}
       {% if link.notes %} 
       <span class="pub-award">{{ link.notes }}</span>
@@ -44,6 +44,9 @@
       {{ link.others }}
       {% endif %}
     </div>
+    {% if link.bibtex %}
+    <pre class="bibref">{{ link.bibtex }}</pre>
+    {% endif %}
   </div>
 </div>
 </li>
@@ -54,4 +57,15 @@
 
 </ol>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".bibtex-toggle").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var pre = btn.closest(".col-sm-9").querySelector(".bibref");
+      if (pre) pre.style.display = (pre.style.display === "block") ? "none" : "block";
+    });
+  });
+});
+</script>
 

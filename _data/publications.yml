@@ -6,7 +6,13 @@ main:
     conference:
     pdf: https://arxiv.org/abs/2603.17975
     page: https://miraymen.github.io/ahoy/
-    bibtex: ./assets/bibtex/ahoy.bib
+    bibtex: |
+      @article{mir2026ahoy,
+        title   = {AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors},
+        author  = {Mir, Aymen and Guler, Riza Alp and Tang, Xiangjun and Wonka, Peter and Pons-Moll, Gerard},
+        journal = {arXiv preprint arXiv:2603.17975},
+        year    = {2026}
+      }
     image: ./assets/img/ahoy.mp4
 
   - title: Animated 3DGS Avatars in Diverse Scenes with Consistent Lighting and Shadows
@@ -15,7 +21,13 @@ main:
     conference: 
     pdf: https://arxiv.org/abs/2601.01660
     page: https://miraymen.github.io/dgsm/
-    bibtex: ./assets/bibtex/dgsm.bib
+    bibtex: |
+      @article{mir2026animated,
+        title   = {Animated 3DGS Avatars in Diverse Scenes with Consistent Lighting and Shadows},
+        author  = {Mir, Aymen and Guler, Riza Alp and Wang, Jian and Pons-Moll, Gerard and Zhou, Bing},
+        journal = {arXiv preprint arXiv:2601.01660},
+        year    = {2026}
+      }
     image: ./assets/img/dgsm.jpg
 
   - title: AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting
@@ -24,7 +36,13 @@ main:
     conference: 
     pdf: https://arxiv.org/abs/2511.09827
     page: https://miraymen.github.io/aha/
-    bibtex: ./assets/bibtex/aha.bib
+    bibtex: |
+      @article{mir2025aha,
+        title   = {AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting},
+        author  = {Mir, Aymen and Wang, Jian and Guler, Riza Alp and Guo, Chuan and Pons-Moll, Gerard and Zhou, Bing},
+        journal = {arXiv preprint arXiv:2511.09827},
+        year    = {2025}
+      }
     image: ./assets/img/aha.mp4
 
   - title: FishNet++ - Analyzing the capabilities of Multimodal Large Language Models in marine biology
@@ -32,7 +50,13 @@ main:
     conference_short:  
     conference: 
     pdf: https://arxiv.org/abs/2509.25564
-    bibtex: ./assets/bibtex/fishnetpp.bib
+    bibtex: |
+      @article{khan2025fishnetpp,
+        title   = {FishNet++: Analyzing the Capabilities of Multimodal Large Language Models in Marine Biology},
+        author  = {Khan, Faizan Farooq and Radwan, Yousef and Abdelrahman, Eslam and Felemban, Abdulwahab and Mir, Aymen and Michiels, Nico K. and Temple, Andrew J. and Berumen, Michael L. and Elhoseiny, Mohamed},
+        journal = {arXiv preprint arXiv:2509.25564},
+        year    = {2025}
+      }
     image: ./assets/img/fish.png
 
   - title: Generating Continual Human Motion in Diverse 3D Scenes
@@ -41,7 +65,14 @@ main:
     conference: International Conference on 3D Vision <strong>(3DV)</strong>, 2024.
     pdf: https://arxiv.org/abs/2304.02061
     code: https://github.com/miraymen/origin
-    bibtex: ./assets/bibtex/origin.bib
+    bibtex: |
+      @inproceedings{mir2024continual,
+        title     = {Generating Continual Human Motion in Diverse 3D Scenes},
+        author    = {Mir, Aymen and Puig, Xavier and Kanazawa, Angjoo and Pons-Moll, Gerard},
+        booktitle = {International Conference on 3D Vision (3DV)},
+        pages     = {903--913},
+        year      = {2024}
+      }
     image: ./assets/img/origin.mp4
 
   - title: Human POSEitioning System - Human Pose Estimation and Self-Localization in Large 3D Scenes
@@ -50,7 +81,13 @@ main:
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
     pdf: https://arxiv.org/abs/2103.17265
     code: https://github.com/miraymen/hps
-    bibtex: ./assets/bibtex/hps.bib
+    bibtex: |
+      @inproceedings{guzov2021hps,
+        title     = {Human POSEitioning System (HPS): 3D Human Pose Estimation and Self-Localization in Large Scenes from Body-Mounted Sensors},
+        author    = {Guzov, Vladimir and Mir, Aymen and Sattler, Torsten and Pons-Moll, Gerard},
+        booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        year      = {2021}
+      }
     image: ./assets/img/hps.mp4
     notes: Best Paper Finalist, Oral (* = equal contribution)
 
@@ -61,7 +98,13 @@ main:
     conference: Advances in Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2020.
     pdf: https://arxiv.org/abs/2010.13938
     code: https://github.com/miraymen/ndf-1
-    bibtex: ./assets/bibtex/ndf.bib
+    bibtex: |
+      @inproceedings{chibane2020ndf,
+        title     = {Neural Unsigned Distance Fields for Implicit Function Learning},
+        author    = {Chibane, Julian and Mir, Aymen and Pons-Moll, Gerard},
+        booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+        year      = {2020}
+      }
     image: ./assets/img/ndf.mp4
 
 
@@ -71,5 +114,11 @@ main:
     conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     pdf: https://arxiv.org/abs/2003.02050
     code: https://github.com/miraymen/pix2surf
-    bibtex: ./assets/bibtex/pix2surf.bib
+    bibtex: |
+      @inproceedings{mir2020pix2surf,
+        title     = {Learning to Transfer Texture from Clothing Images to 3D Humans},
+        author    = {Mir, Aymen and Alldieck, Thiemo and Pons-Moll, Gerard},
+        booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        year      = {2020}
+      }
     image: ./assets/img/pix2surf.mp4
