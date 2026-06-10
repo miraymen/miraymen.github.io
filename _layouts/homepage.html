@@ -83,7 +83,7 @@
 
           <div class="social-icons">
             {% if site.email %}
-            <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i>Email</a>
+            <a href="#" id="email-copy" title="{{ site.email }} — click to copy"><i class="fas fa-envelope"></i>Email</a>
             {% endif %}
 
             {% if site.cv_link %}
@@ -123,7 +123,23 @@
         
       </footer>
     </div>
+    <div id="copy-toast">Copied email to clipboard!</div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      (function() {
+        var btn = document.getElementById("email-copy");
+        if (!btn) return;
+        btn.addEventListener("click", function(e) {
+          e.preventDefault();
+          navigator.clipboard.writeText("{{ site.email }}").then(function() {
+            var toast = document.getElementById("copy-toast");
+            toast.classList.add("show");
+            clearTimeout(toast._t);
+            toast._t = setTimeout(function() { toast.classList.remove("show"); }, 2000);
+          });
+        });
+      })();
+    </script>
     <script>
       (function() {
         var btn = document.getElementById("theme-toggle");

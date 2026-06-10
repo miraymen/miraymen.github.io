@@ -702,7 +702,7 @@ header h1 {
 
 section h2 {
   margin-top: 2.2rem;
-  border-top: 1px dashed #c9c9c9;
+  border-top: 1px solid #c9c9c9;
   padding-top: 1.6rem;
 }
 
@@ -819,4 +819,36 @@ html[data-theme="dark"] .bib-copy {
 html[data-theme="dark"] .bib-copy:hover {
   color: #3eb7f0;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+#copy-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: #043361;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 200;
+}
+
+#copy-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) #copy-toast {
+    background-color: #2496cb;
+  }
+}
+
+html[data-theme="dark"] #copy-toast {
+  background-color: #2496cb;
 }
