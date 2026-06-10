@@ -700,11 +700,23 @@ header h1 {
 }
 
 section h2 {
-  margin-top: 2.4rem;
+  margin-top: 2.2rem;
+  border-top: 1px dashed #c9c9c9;
+  padding-top: 1.6rem;
 }
 
 section > h2:first-child {
   margin-top: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) section h2 {
+    border-top-color: #3a3b45;
+  }
+}
+
+html[data-theme="dark"] section h2 {
+  border-top-color: #3a3b45;
 }
 
 section p, section ul, section ol {
