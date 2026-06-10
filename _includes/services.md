@@ -3,8 +3,8 @@
 <h4 style="margin:0 10px 0;">Conference Reviewers</h4>
 
 <ul style="margin:0 0 5px;">
-  <li><a href="http://cvpr2024.thecvf.com/"><autocolor>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2021-2026</autocolor></a></li>
-  <li><a href="http://iccv2023.thecvf.com/"><autocolor>IEEE/CVF International Conference on Computer Vision (ICCV) 2021-2025</autocolor></a></li>
+  <li><a href="https://cvpr.thecvf.com/"><autocolor>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2021-2026</autocolor></a></li>
+  <li><a href="https://iccv.thecvf.com/"><autocolor>IEEE/CVF International Conference on Computer Vision (ICCV) 2021-2025</autocolor></a></li>
   <li><a href="https://eccv.ecva.net/"><autocolor>European Conference on Computer Vision (ECCV) 2020-2026</autocolor></a></li>
   <li><a href="https://neurips.cc/"><autocolor>Advances in Neural Information Processing Systems (NeurIPS) 2022-2026</autocolor></a></li>
   <li><a href="https://3dvconf.github.io/"><autocolor>IEEE International Conference on 3D Vision (3DV) 2021-2025</autocolor></a></li>
