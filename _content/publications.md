@@ -25,14 +25,14 @@
       {% if link.pdf %}
       <a href="{{ link.pdf }}" class="btn" role="button" target="_blank">PDF</a>
       {% endif %}
-      {% if link.code %}
-      <a href="{{ link.code }}" class="btn" role="button" target="_blank">Code</a>
-      {% endif %}
       {% if link.page %}
       <a href="{{ link.page }}" class="btn" role="button" target="_blank">Project Page</a>
       {% endif %}
       {% if link.bibtex %}
       <a class="btn fakelink bibtex-toggle" role="button">BibTeX</a>
+      {% endif %}
+      {% if link.code %}
+      <a href="{{ link.code }}" class="btn" role="button" target="_blank">Code</a>
       {% endif %}
       {% if link.notes %}
       <span class="pub-award">{{ link.notes }}</span>

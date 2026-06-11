@@ -50,6 +50,7 @@ main:
     conference_short:  
     conference: 
     pdf: https://arxiv.org/abs/2509.25564
+    page: https://arxiv.org/abs/2509.25564
     bibtex: |
       @article{khan2025fishnetpp,
         title   = {FishNet++: Analyzing the Capabilities of Multimodal Large Language Models in Marine Biology},
