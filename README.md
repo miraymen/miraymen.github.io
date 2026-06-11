@@ -6,13 +6,13 @@ Feel free to borrow the code.
 
 ## Structure
 
-All content you would edit lives in `index.md` and `_content/` (`_config.yml` points Jekyll's `includes_dir` and `data_dir` there):
+All content you would edit lives in `_content/` (`_config.yml` points Jekyll's `includes_dir` and `data_dir` there, and force-includes the homepage via `include:` + a `permalink: /`):
 
 ```
 .
 ├── _config.yml               # identity, links, avatar/favicon, analytics
-├── index.md                  # news, services, teaching, talks
 ├── _content/
+│   ├── index.md              # news, services, teaching, talks
 │   ├── intro.html            # bio, rendered next to the photo in the header
 │   ├── publications.yml      # one entry per paper (title, authors, links, bibtex, teaser)
 │   └── publications.md       # template that renders the publication list
