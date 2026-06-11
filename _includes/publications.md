@@ -9,11 +9,11 @@
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
     {% if link.image contains ".mp4" %}
-    <video class="teaser img-fluid z-depth-1" autoplay loop muted playsinline>
+    <video class="teaser" autoplay loop muted playsinline>
       <source src="{{ link.image }}" type="video/mp4">
     </video>
     {% elsif link.image %}
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+    <img src="{{ link.image }}" class="teaser">
     {% endif %}
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -22,23 +22,20 @@
       <div class="periodical"><em>{{ link.conference }}</em>
       </div>
     <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      {% if link.pdf %}
+      <a href="{{ link.pdf }}" class="btn" role="button" target="_blank">PDF</a>
       {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      {% if link.code %}
+      <a href="{{ link.code }}" class="btn" role="button" target="_blank">Code</a>
       {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      {% if link.page %}
+      <a href="{{ link.page }}" class="btn" role="button" target="_blank">Project Page</a>
       {% endif %}
-      {% if link.bibtex %} 
-      <a class="btn btn-sm z-depth-0 fakelink bibtex-toggle" role="button" style="font-size:12px;">BibTeX</a>
+      {% if link.bibtex %}
+      <a class="btn fakelink bibtex-toggle" role="button">BibTeX</a>
       {% endif %}
-      {% if link.notes %} 
+      {% if link.notes %}
       <span class="pub-award">{{ link.notes }}</span>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
       {% endif %}
     </div>
     {% if link.bibtex %}
