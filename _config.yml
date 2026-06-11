@@ -27,6 +27,10 @@ favicon: ./assets/img/favicon.png
 # Google Analytics (GA4) Measurement ID
 google_analytics: G-BXH2966VL8
 
+# All editable content (bio, publications data + template) lives in one folder.
+includes_dir: _content
+data_dir: _content
+
 # The following files will be removed from the generated website.
 exclude:
   - Gemfile
