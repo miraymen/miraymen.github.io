@@ -214,11 +214,15 @@ header {
   float:none;
   position:static;
   -webkit-font-smoothing:subpixel-antialiased;
-  padding-top:3.0em;
   display:flex;
   align-items:center;
   gap:2.2rem;
   text-align:left;
+  background-color:#fafbfd;
+  border:1px solid #eaeef2;
+  border-radius:14px;
+  padding:1.8rem;
+  margin-top:1.0em;
 }
 
 header .profile-avatar {
@@ -295,12 +299,10 @@ section {
   }
 
   header {
-    padding:0;
+    padding:1.2rem;
   }
 
   section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
   }
@@ -388,7 +390,12 @@ section > .band:first-child {
   background-color: #f4f6f8;
   border-radius: 14px;
   padding: 1.5rem 1.8rem 0.5rem;
-  margin: 2.4rem -1.8rem 0;
+  margin: 1.6rem 0 0;
+}
+
+.band.band-light {
+  background-color: #fafbfd;
+  border: 1px solid #eaeef2;
 }
 
 .band h2 {
@@ -397,8 +404,6 @@ section > .band:first-child {
 
 @media (max-width: 960px) {
   .band {
-    margin-left: 0;
-    margin-right: 0;
     padding-left: 1.1rem;
     padding-right: 1.1rem;
   }
@@ -422,6 +427,12 @@ section h2::after {
   html:not([data-theme="light"]) .band {
     background-color: #272938;
   }
+
+  html:not([data-theme="light"]) .band.band-light,
+  html:not([data-theme="light"]) header {
+    background-color: #242532;
+    border-color: #31333f;
+  }
 }
 
 html[data-theme="dark"] section h2::after {
@@ -430,6 +441,12 @@ html[data-theme="dark"] section h2::after {
 
 html[data-theme="dark"] .band {
   background-color: #272938;
+}
+
+html[data-theme="dark"] .band.band-light,
+html[data-theme="dark"] header {
+  background-color: #242532;
+  border-color: #31333f;
 }
 
 section p, section ul, section ol {

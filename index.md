@@ -12,7 +12,9 @@ layout: homepage
 - **[Feb. 2024]** Website online!
 </div>
 
+<div class="band band-light">
 {% include publications.md %}
+</div>
 
 <div class="band" markdown="1">
 ## Services
@@ -41,6 +43,7 @@ layout: homepage
 </ul>
 </div>
 
+<div class="band band-light" markdown="1">
 ## Teaching
 
 <ul style="margin:0 0 5px;">
@@ -48,6 +51,7 @@ layout: homepage
   <li>Fall 2021: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://virtualhumans.mpi-inf.mpg.de/MML21//"><autocolor>Mathematics for Machine Learning, University of Tübingen</autocolor></a></li>
   <li>Fall 2019: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mop.uni-saarland.de/teaching.shtml"><autocolor>Machine Learning, University of Saarland</autocolor></a></li>
 </ul>
+</div>
 
 <div class="band" markdown="1">
 ## Talks
