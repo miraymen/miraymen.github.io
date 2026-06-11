@@ -376,13 +376,32 @@ header h1 {
 }
 
 section h2 {
-  margin-top: 2.2rem;
-  border-top: 1px solid #c9c9c9;
-  padding-top: 1.6rem;
+  margin-top: 2.4rem;
 }
 
-section > h2:first-child {
+section > h2:first-child,
+section > .band:first-child {
   margin-top: 0;
+}
+
+.band {
+  background-color: #f4f6f8;
+  border-radius: 14px;
+  padding: 1.5rem 1.8rem 0.5rem;
+  margin: 2.4rem -1.8rem 0;
+}
+
+.band h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 960px) {
+  .band {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
 }
 
 section h2::after {
@@ -396,21 +415,21 @@ section h2::after {
 }
 
 @media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) section h2 {
-    border-top-color: #3a3b45;
-  }
-
   html:not([data-theme="light"]) section h2::after {
     background: linear-gradient(90deg, #565b64, #9aa1ab, #565b64);
   }
-}
 
-html[data-theme="dark"] section h2 {
-  border-top-color: #3a3b45;
+  html:not([data-theme="light"]) .band {
+    background-color: #272938;
+  }
 }
 
 html[data-theme="dark"] section h2::after {
   background: linear-gradient(90deg, #565b64, #9aa1ab, #565b64);
+}
+
+html[data-theme="dark"] .band {
+  background-color: #272938;
 }
 
 section p, section ul, section ol {
