@@ -218,7 +218,7 @@ header {
   align-items:center;
   gap:2.2rem;
   text-align:left;
-  background-color:#fafbfd;
+  background-color:#ffffff;
   border:1px solid #eaeef2;
   border-radius:14px;
   padding:1.8rem;
@@ -394,7 +394,7 @@ section > .band:first-child {
 }
 
 .band.band-light {
-  background-color: #fafbfd;
+  background-color: #ffffff;
   border: 1px solid #eaeef2;
 }
 
@@ -430,7 +430,7 @@ section h2::after {
 
   html:not([data-theme="light"]) .band.band-light,
   html:not([data-theme="light"]) header {
-    background-color: #242532;
+    background-color: #22232f;
     border-color: #31333f;
   }
 }
@@ -445,7 +445,7 @@ html[data-theme="dark"] .band {
 
 html[data-theme="dark"] .band.band-light,
 html[data-theme="dark"] header {
-  background-color: #242532;
+  background-color: #22232f;
   border-color: #31333f;
 }
 
