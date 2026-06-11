@@ -89,7 +89,7 @@ html[data-theme="dark"] .publications ol.bibliography li .links a.btn:hover { co
 
 .publications ol.bibliography li .teaser:hover { transform: translateY(-4px); box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35); }
 
-.publications ol.bibliography li .links .pub-award { display: inline-block; background-color: rgba(255, 184, 28, 0.16); border: 1px solid rgba(212, 160, 23, 0.55); color: #9a7b0a; border-radius: 999px; padding: 0.05rem 0.6rem; font-size: 12px; font-weight: 600; }
+.publications ol.bibliography li .links .pub-award { display: table; margin-top: 0.5rem; background-color: rgba(255, 184, 28, 0.16); border: 1px solid rgba(212, 160, 23, 0.55); color: #9a7b0a; border-radius: 999px; padding: 0.05rem 0.6rem; font-size: 12px; font-weight: 600; }
 
 @media (prefers-color-scheme: dark) {
 html:not([data-theme="light"]) .publications ol.bibliography li .links .pub-award { background-color: rgba(255, 212, 94, 0.12); border-color: rgba(255, 212, 94, 0.45); color: #ffd45e; }
