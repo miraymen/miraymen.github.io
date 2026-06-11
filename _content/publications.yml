@@ -92,7 +92,7 @@ main:
         year      = {2021}
       }
     image: ./assets/img/hps.mp4
-    notes: Best Paper Finalist, Oral (* = equal contribution)
+    notes: Best Paper Finalist
 
 
   - title: Neural Unsigned Distance Fields for Implicit Function Learning
