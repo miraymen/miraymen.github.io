@@ -549,10 +549,21 @@ html[data-theme="dark"] #copy-toast {
 }
 
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
   font-size: 0.8rem;
   color: #9a9a9a;
   padding-bottom: 2.2rem;
+}
+
+@media (max-width: 640px) {
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 footer a {
