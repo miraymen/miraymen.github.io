@@ -12,7 +12,7 @@ layout: homepage
 - **[Feb. 2024]** Website online!
 </div>
 
-<div class="band band-light">
+<div class="band">
 {% include publications.md %}
 </div>
 
@@ -43,7 +43,7 @@ layout: homepage
 </ul>
 </div>
 
-<div class="band band-light" markdown="1">
+<div class="band" markdown="1">
 ## Teaching
 
 <ul style="margin:0 0 5px;">
