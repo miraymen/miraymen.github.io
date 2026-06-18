@@ -4,6 +4,7 @@ layout: homepage
 
 <div class="band" markdown="1">
 ## News
+- **[Jun. 2026]** Two papers, AHOY! and RAGA, accepted at ECCV 2026!
 - **[Nov. 2025]** I spent a wonderful summer interning at Snap Research in New York City.
 - **[Oct. 2025]** Honoured to be recognized as a Top Reviewer at NeurIPS 2025.
 - **[Jun. 2024]** I joined Huawei Noah's Ark Lab in London as a research intern.

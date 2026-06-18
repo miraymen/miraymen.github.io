@@ -2,31 +2,29 @@ main:
 
   - title: "AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors"
     authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://yuyujunjun.github.io/">Xiangjun Tang</a>, <a href="https://peterwonka.net/">Peter Wonka</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
-    conference_short:
-    conference:
+    conference_short: ECCV
+    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
     pdf: https://arxiv.org/abs/2603.17975
     page: https://miraymen.github.io/ahoy/
     bibtex: |
-      @article{mir2026ahoy,
-        title   = {AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors},
-        author  = {Mir, Aymen and Guler, Riza Alp and Tang, Xiangjun and Wonka, Peter and Pons-Moll, Gerard},
-        journal = {arXiv preprint arXiv:2603.17975},
-        year    = {2026}
+      @inproceedings{mir2026ahoy,
+        title     = {AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors},
+        author    = {Mir, Aymen and Guler, Riza Alp and Tang, Xiangjun and Wonka, Peter and Pons-Moll, Gerard},
+        booktitle = {European Conference on Computer Vision (ECCV)},
+        year      = {2026}
       }
     image: ./assets/img/ahoy.mp4
 
-  - title: Animated 3DGS Avatars in Diverse Scenes with Consistent Lighting and Shadows
-    authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>
-    conference_short:  
-    conference: 
-    pdf: https://arxiv.org/abs/2601.01660
-    page: https://miraymen.github.io/dgsm/
+  - title: "RAGA: Real Time Ray Traced Gaussian Shadow Casting for 3DGS Avatar-Scene Interaction"
+    authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://peterwonka.net/">Peter Wonka</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
+    conference_short: ECCV
+    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
     bibtex: |
-      @article{mir2026animated,
-        title   = {Animated 3DGS Avatars in Diverse Scenes with Consistent Lighting and Shadows},
-        author  = {Mir, Aymen and Guler, Riza Alp and Wang, Jian and Pons-Moll, Gerard and Zhou, Bing},
-        journal = {arXiv preprint arXiv:2601.01660},
-        year    = {2026}
+      @inproceedings{mir2026raga,
+        title     = {RAGA: Real Time Ray Traced Gaussian Shadow Casting for 3DGS Avatar-Scene Interaction},
+        author    = {Mir, Aymen and Guler, Riza Alp and Wang, Jian and Wonka, Peter and Zhou, Bing and Pons-Moll, Gerard},
+        booktitle = {European Conference on Computer Vision (ECCV)},
+        year      = {2026}
       }
     image: ./assets/img/dgsm.jpg
 
