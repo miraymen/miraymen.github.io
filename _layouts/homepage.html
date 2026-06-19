@@ -22,6 +22,7 @@
     {% endif %}
 
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:title" content="{{ site.title }}">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:url" content="https://miraymen.github.io/">
@@ -30,6 +31,15 @@
     <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ site.description }}">
     <meta name="twitter:image" content="https://miraymen.github.io/assets/img/image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "url": "{{ site.canonical | default: 'https://miraymen.github.io/' }}"
+    }
+    </script>
 
     {% if site.google_analytics %}
     <!-- Google tag (gtag.js) -->
