@@ -27,7 +27,7 @@ main:
         booktitle = {European Conference on Computer Vision (ECCV)},
         year      = {2026}
       }
-    image: ./assets/img/dgsm.jpg
+    image: ./assets/img/raga.mp4
 
   - title: AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting
     authors: <strong>Aymen Mir</strong>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://ericguo5513.github.io/">Chuan Guo</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>
