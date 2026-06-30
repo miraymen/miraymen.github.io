@@ -19,6 +19,7 @@ main:
     authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://peterwonka.net/">Peter Wonka</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: ECCV
     conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2606.29329
     page: https://miraymen.github.io/raga/
     bibtex: |
       @inproceedings{mir2026raga,
