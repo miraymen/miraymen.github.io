@@ -45,6 +45,14 @@ main:
       }
     image: ./assets/img/aha.mp4
 
+  - title: GASPACHO - Gaussian Splatting for Controllable Humans and Objects
+    authors: <strong>Aymen Mir</strong>, Arthur Moreau, Helisa Dhamo, Zhensong Zhang, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, Eduardo Perez-Pellitero
+    conference_short:
+    conference:
+    pdf: http://arxiv.org/abs/2503.09342
+    page: https://miraymen.github.io/gaspacho/
+    image: ./assets/img/gaspacho.mp4
+
   - title: FishNet++ - Analyzing the capabilities of Multimodal Large Language Models in marine biology
     authors: <a href="https://faixan-khan.github.io/">Faizan Farooq Khan</a>, <a href="https://github.com/yradwan147">Yousef Radwan</a>, <a href="https://eslambakr.github.io/">Eslam Abdelrahman</a>, <a href="https://cemse.kaust.edu.sa/profiles/abdulwahab-felemban">Abdulwahab Felemban</a>, <strong>Aymen Mir</strong>, <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/biologie/institute/evolution-und-oekologie/lehrbereiche/animal-evolutionary-ecology/people/nico-michiels/">Nico K. Michiels</a>, <a href="https://reefecology.kaust.edu.sa/people/details/andrew-temple">Andrew J. Temple</a>, <a href="https://reefecology.kaust.edu.sa/people/details/prof.-michael-berumen">Michael L. Berumen</a>, <a href="https://www.mohamed-elhoseiny.com/">Mohamed Elhoseiny</a>
     conference_short:  
