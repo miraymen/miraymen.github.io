@@ -4,14 +4,36 @@ layout: homepage
 
 <div class="band" markdown="1">
 ## News
-- **[Jul. 2026]** Honoured to be selected for the Doctoral Consortium at ECCV 2026!
-- **[Jun. 2026]** Two papers, <a href="https://miraymen.github.io/ahoy/">AHOY!</a> and <a href="https://miraymen.github.io/raga/">RAGA</a>, accepted at ECCV 2026!
-- **[Nov. 2025]** I spent a wonderful summer interning at Snap Research in New York City.
-- **[Oct. 2025]** Honoured to be recognized as a Top Reviewer at NeurIPS 2025.
-- **[Jun. 2024]** I joined Huawei Noah's Ark Lab in London as a research intern.
-- **[Jun. 2024]** We organized the <a href="https://3dcompat-dataset.org/workshop/C3DV24/">Compositional 3D Vision Workshop</a> at CVPR 2024.
-- **[Mar. 2024]** Our paper <a href="https://arxiv.org/abs/2304.02061">Generating Continual Human Motion in Diverse 3D Scenes</a> was presented at 3DV 2024 in Davos.
-- **[Feb. 2024]** Website online!
+
+<ul id="news-list">
+  <li><strong>[Jul. 2026]</strong> Honoured to be selected for the Doctoral Consortium at ECCV 2026!</li>
+  <li><strong>[Jun. 2026]</strong> Two papers, <a href="https://miraymen.github.io/ahoy/">AHOY!</a> and <a href="https://miraymen.github.io/raga/">RAGA</a>, accepted at ECCV 2026!</li>
+  <li><strong>[Nov. 2025]</strong> I spent a wonderful summer interning at Snap Research in New York City.</li>
+  <li><strong>[Oct. 2025]</strong> Honoured to be recognized as a Top Reviewer at NeurIPS 2025.</li>
+  <li><strong>[Jun. 2024]</strong> I joined Huawei Noah's Ark Lab in London as a research intern.</li>
+  <li class="news-more"><strong>[Jun. 2024]</strong> We organized the <a href="https://3dcompat-dataset.org/workshop/C3DV24/">Compositional 3D Vision Workshop</a> at CVPR 2024.</li>
+  <li class="news-more"><strong>[Mar. 2024]</strong> Our paper <a href="https://arxiv.org/abs/2304.02061">Generating Continual Human Motion in Diverse 3D Scenes</a> was presented at 3DV 2024 in Davos.</li>
+  <li class="news-more"><strong>[Feb. 2024]</strong> Website online!</li>
+</ul>
+
+<a href="#" id="news-toggle" role="button">Show more</a>
+
+<style>
+  #news-list .news-more { display: none; }
+  #news-list.expanded .news-more { display: list-item; }
+</style>
+<script>
+(function() {
+  var toggle = document.getElementById("news-toggle");
+  var list = document.getElementById("news-list");
+  if (!toggle || !list) return;
+  toggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    var open = list.classList.toggle("expanded");
+    toggle.textContent = open ? "Show less" : "Show more";
+  });
+})();
+</script>
 </div>
 
 <div class="band">
