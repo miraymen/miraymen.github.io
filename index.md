@@ -4,6 +4,7 @@ layout: homepage
 
 <div class="band" markdown="1">
 ## News
+- **[Jul. 2026]** Honoured to be selected for the Doctoral Consortium at ECCV 2026!
 - **[Jun. 2026]** Two papers, <a href="https://miraymen.github.io/ahoy/">AHOY!</a> and <a href="https://miraymen.github.io/raga/">RAGA</a>, accepted at ECCV 2026!
 - **[Nov. 2025]** I spent a wonderful summer interning at Snap Research in New York City.
 - **[Oct. 2025]** Honoured to be recognized as a Top Reviewer at NeurIPS 2025.
