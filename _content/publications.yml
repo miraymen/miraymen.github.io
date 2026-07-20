@@ -51,6 +51,13 @@ main:
     conference:
     pdf: http://arxiv.org/abs/2503.09342
     page: https://miraymen.github.io/gaspacho/
+    bibtex: |
+      @article{mir2025gaspacho,
+        title   = {GASPACHO: Gaussian Splatting for Controllable Humans and Objects},
+        author  = {Mir, Aymen and Moreau, Arthur and Dhamo, Helisa and Zhang, Zhensong and Pons-Moll, Gerard and Perez-Pellitero, Eduardo},
+        journal = {arXiv preprint arXiv:2503.09342},
+        year    = {2025}
+      }
     image: ./assets/img/gaspacho.mp4
 
   - title: FishNet++ - Analyzing the capabilities of Multimodal Large Language Models in marine biology
