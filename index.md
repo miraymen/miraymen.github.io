@@ -6,11 +6,12 @@ layout: homepage
 ## News
 
 <ul id="news-list">
+  <li><strong>[Jul. 2026]</strong> Named an <a href="https://eccv.ecva.net/Conferences/2026/ProgramCommittee#outstanding-reviewer">Outstanding Reviewer</a> at ECCV 2026!</li>
   <li><strong>[Jul. 2026]</strong> Selected for the Doctoral Consortium at ECCV 2026!</li>
   <li><strong>[Jun. 2026]</strong> Two papers, <a href="https://miraymen.github.io/ahoy/">AHOY!</a> and <a href="https://miraymen.github.io/raga/">RAGA</a>, accepted at ECCV 2026!</li>
   <li><strong>[Nov. 2025]</strong> I spent a wonderful summer interning at Snap Research in New York City.</li>
   <li><strong>[Oct. 2025]</strong> Named a Top Reviewer at NeurIPS 2025.</li>
-  <li><strong>[Jun. 2024]</strong> I joined Huawei Noah's Ark Lab in London as a research intern.</li>
+  <li class="news-more"><strong>[Jun. 2024]</strong> I joined Huawei Noah's Ark Lab in London as a research intern.</li>
   <li class="news-more"><strong>[Jun. 2024]</strong> We organized the <a href="https://3dcompat-dataset.org/workshop/C3DV24/">Compositional 3D Vision Workshop</a> at CVPR 2024.</li>
   <li class="news-more"><strong>[Mar. 2024]</strong> Our paper <a href="https://arxiv.org/abs/2304.02061">Generating Continual Human Motion in Diverse 3D Scenes</a> was presented at 3DV 2024 in Davos.</li>
   <li class="news-more"><strong>[Feb. 2024]</strong> Website online!</li>
