@@ -1,37 +1,7 @@
 main:
 
-  - title: "AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors"
-    authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://yuyujunjun.github.io/">Xiangjun Tang</a>, <a href="https://peterwonka.net/">Peter Wonka</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
-    conference_short: ECCV
-    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
-    pdf: https://arxiv.org/abs/2603.17975
-    page: https://miraymen.github.io/ahoy/
-    bibtex: |
-      @inproceedings{mir2026ahoy,
-        title     = {AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors},
-        author    = {Mir, Aymen and Guler, Riza Alp and Tang, Xiangjun and Wonka, Peter and Pons-Moll, Gerard},
-        booktitle = {European Conference on Computer Vision (ECCV)},
-        year      = {2026}
-      }
-    image: ./assets/img/ahoy.mp4
-
-  - title: "RAGA: Real Time Ray Traced Gaussian Shadow Casting for 3DGS Avatar-Scene Interaction"
-    authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://peterwonka.net/">Peter Wonka</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
-    conference_short: ECCV
-    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
-    pdf: https://arxiv.org/abs/2606.29329
-    page: https://miraymen.github.io/raga/
-    bibtex: |
-      @inproceedings{mir2026raga,
-        title     = {RAGA: Real Time Ray Traced Gaussian Shadow Casting for 3DGS Avatar-Scene Interaction},
-        author    = {Mir, Aymen and Guler, Riza Alp and Wang, Jian and Wonka, Peter and Zhou, Bing and Pons-Moll, Gerard},
-        booktitle = {European Conference on Computer Vision (ECCV)},
-        year      = {2026}
-      }
-    image: ./assets/img/raga.mp4
-
   - title: AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting
-    authors: <strong>Aymen Mir</strong>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://alpguler.com/">Riza Alp Guler</a>, <a href="https://ericguo5513.github.io/">Chuan Guo</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>
+    authors: <strong>Aymen Mir</strong>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://alpguler.com/">Rıza Alp Güler</a>, <a href="https://ericguo5513.github.io/">Chuan Guo</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>
     conference_short:  
     conference: 
     pdf: https://arxiv.org/abs/2511.09827
@@ -45,7 +15,7 @@ main:
       }
     image: ./assets/img/aha.mp4
 
-  - title: GASPACHO - Gaussian Splatting for Controllable Humans and Objects
+  - title: "GASPACHO: Gaussian Splatting for Controllable Humans and Objects"
     authors: <strong>Aymen Mir</strong>, Arthur Moreau, Helisa Dhamo, Zhensong Zhang, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, Eduardo Perez-Pellitero
     conference_short:
     conference:
@@ -75,6 +45,36 @@ main:
       }
     image: ./assets/img/fish.png
 
+  - title: "AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors"
+    authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Rıza Alp Güler</a>, <a href="https://yuyujunjun.github.io/">Xiangjun Tang</a>, <a href="https://peterwonka.net/">Peter Wonka</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
+    conference_short: ECCV
+    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2603.17975
+    page: https://miraymen.github.io/ahoy/
+    bibtex: |
+      @inproceedings{mir2026ahoy,
+        title     = {AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors},
+        author    = {Mir, Aymen and Guler, Riza Alp and Tang, Xiangjun and Wonka, Peter and Pons-Moll, Gerard},
+        booktitle = {European Conference on Computer Vision (ECCV)},
+        year      = {2026}
+      }
+    image: ./assets/img/ahoy.mp4
+
+  - title: "RAGA: Real Time Ray Traced Gaussian Shadow Casting for 3DGS Avatar-Scene Interaction"
+    authors: <strong>Aymen Mir</strong>, <a href="https://alpguler.com/">Rıza Alp Güler</a>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://peterwonka.net/">Peter Wonka</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
+    conference_short: ECCV
+    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2606.29329
+    page: https://miraymen.github.io/raga/
+    bibtex: |
+      @inproceedings{mir2026raga,
+        title     = {RAGA: Real Time Ray Traced Gaussian Shadow Casting for 3DGS Avatar-Scene Interaction},
+        author    = {Mir, Aymen and Guler, Riza Alp and Wang, Jian and Wonka, Peter and Zhou, Bing and Pons-Moll, Gerard},
+        booktitle = {European Conference on Computer Vision (ECCV)},
+        year      = {2026}
+      }
+    image: ./assets/img/raga.mp4
+
   - title: Generating Continual Human Motion in Diverse 3D Scenes
     authors: <strong>Aymen Mir</strong>, <a href="https://www.xavierpuigf.com/">Xavier Puig</a>, <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: 3DV 
@@ -92,7 +92,7 @@ main:
       }
     image: ./assets/img/origin.mp4
 
-  - title: Human POSEitioning System - Human Pose Estimation and Self-Localization in Large 3D Scenes
+  - title: "Human POSEitioning System (HPS): 3D Human Pose Estimation and Self-Localization in Large Scenes from Body-Mounted Sensors"
     authors: <a href="https://vguzov.github.io/">Vladimir Guzov</a>*, <strong>Aymen Mir*</strong>, <a href="https://tsattler.github.io/">Torsten Sattler</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: CVPR 
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
@@ -107,8 +107,7 @@ main:
         year      = {2021}
       }
     image: ./assets/img/hps.mp4
-    notes: Best Paper Finalist
-
+    notes: Best Paper Candidate
 
   - title: Neural Unsigned Distance Fields for Implicit Function Learning
     authors: <a href="https://virtualhumans.mpi-inf.mpg.de/people/Chibane.html">Julian Chibane</a>, <strong>Aymen Mir</strong>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
@@ -125,7 +124,6 @@ main:
         year      = {2020}
       }
     image: ./assets/img/ndf.mp4
-
 
   - title: Learning to Transfer Texture from Clothing Images to 3D Humans
     authors: <strong>Aymen Mir</strong>, <a href="https://research.google/people/107250/">Thiemo Alldieck</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>

@@ -48,18 +48,24 @@ layout: homepage
 <h4 style="margin:0 10px 0;">Conference Reviewers</h4>
 
 <ul style="margin:0 0 5px;">
-  <li><a href="https://cvpr.thecvf.com/"><autocolor>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2021-2026</autocolor></a></li>
-  <li><a href="https://iccv.thecvf.com/"><autocolor>IEEE/CVF International Conference on Computer Vision (ICCV) 2021-2025</autocolor></a></li>
-  <li><a href="https://eccv.ecva.net/"><autocolor>European Conference on Computer Vision (ECCV) 2020-2026</autocolor></a></li>
-  <li><a href="https://neurips.cc/"><autocolor>Advances in Neural Information Processing Systems (NeurIPS) 2022-2026</autocolor></a></li>
-  <li><a href="https://3dvconf.github.io/"><autocolor>IEEE International Conference on 3D Vision (3DV) 2021-2025</autocolor></a></li>
-  <li><a href="https://www.siggraph.org/"><autocolor>SIGGRAPH/SIGGRAPH Asia 2022-2024</autocolor></a></li>
+  <li><a href="https://cvpr.thecvf.com/"><autocolor>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022–2026</autocolor></a></li>
+  <li><a href="https://iccv.thecvf.com/"><autocolor>IEEE/CVF International Conference on Computer Vision (ICCV) 2021, 2023, 2025</autocolor></a></li>
+  <li><a href="https://eccv.ecva.net/"><autocolor>European Conference on Computer Vision (ECCV) 2020, 2022, 2024, 2026</autocolor></a></li>
+  <li><a href="https://3dvconf.github.io/"><autocolor>International Conference on 3D Vision (3DV) 2021, 2027</autocolor></a></li>
+  <li><a href="https://neurips.cc/"><autocolor>Advances in Neural Information Processing Systems (NeurIPS) 2023, 2025, 2026</autocolor></a></li>
+  <li><a href="https://iclr.cc/"><autocolor>International Conference on Learning Representations (ICLR) 2026, 2027</autocolor></a></li>
+  <li><a href="https://icml.cc/"><autocolor>International Conference on Machine Learning (ICML) 2024</autocolor></a></li>
+  <li><a href="https://aaai.org/"><autocolor>AAAI Conference on Artificial Intelligence (AAAI) 2025</autocolor></a></li>
+  <li><a href="https://www.siggraph.org/"><autocolor>SIGGRAPH 2023</autocolor></a></li>
+  <li><a href="https://www.eg.org/"><autocolor>Eurographics 2025</autocolor></a></li>
+  <li><autocolor>Pacific Graphics 2020</autocolor></li>
 </ul>
 
 <h4 style="margin:0 10px 0;">Journal Reviewers</h4>
 <ul style="margin:0 0 20px;">
   <li><a href="https://www.computer.org/csdl/journal/tp"><autocolor>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</autocolor></a></li>
   <li><a href="https://www.springer.com/journal/11263"><autocolor>International Journal of Computer Vision (IJCV)</autocolor></a></li>
+  <li><a href="https://www.computer.org/csdl/journal/tg"><autocolor>IEEE Transactions on Visualization and Computer Graphics (TVCG)</autocolor></a></li>
 </ul>
 
 <h4 style="margin:0 10px 0;">Workshop Organization</h4>
@@ -72,16 +78,25 @@ layout: homepage
 <div class="band" markdown="1">
 ## Teaching
 
+<h4 style="margin:0 10px 0;">Teaching Assistant</h4>
+<ul style="margin:0 0 20px;">
+  <li>Jul. 2023: <autocolor>Informatics 3, University of Tübingen</autocolor></li>
+  <li>Mar. 2022: <a href="https://virtualhumans.mpi-inf.mpg.de/MML21//"><autocolor>Mathematics for Machine Learning, University of Tübingen</autocolor></a></li>
+  <li>Mar. 2020: <a href="https://www.mop.uni-saarland.de/teaching.shtml"><autocolor>Machine Learning, Saarland University</autocolor></a></li>
+</ul>
+
+<h4 style="margin:0 10px 0;">Thesis Supervision</h4>
 <ul style="margin:0 0 5px;">
-  <li>Spring 2023: <a href=""><autocolor>Informatik II, University of Tübingen</autocolor></a></li>
-  <li>Fall 2021: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://virtualhumans.mpi-inf.mpg.de/MML21//"><autocolor>Mathematics for Machine Learning, University of Tübingen</autocolor></a></li>
-  <li>Fall 2019: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mop.uni-saarland.de/teaching.shtml"><autocolor>Machine Learning, University of Saarland</autocolor></a></li>
+  <li>Oct. 2026 – present: <autocolor>MEng thesis, Qichao Wang, Imperial College London</autocolor></li>
+  <li>Dec. 2022 – May 2023: <autocolor>Bachelor thesis, Janik Jehkul, University of Tübingen</autocolor></li>
 </ul>
 </div>
 
 <div class="band" markdown="1">
 ## Talks
 
-- Jan. 2024 - CAIR Vision group at KAUST.
+- Oct. 2026 - Translational AI (STAI) Lab, Stanford University.
+- May 2025 - BMVC Workshop on Virtual Humans, London.
+- Jan. 2024 - CAIR Vision Group, KAUST.
 - Aug. 2023 - Amazon Research, Tübingen.
 </div>
