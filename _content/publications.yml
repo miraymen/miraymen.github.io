@@ -95,7 +95,7 @@ main:
   - title: Human POSEitioning System - Human Pose Estimation and Self-Localization in Large 3D Scenes
     authors: <a href="https://vguzov.github.io/">Vladimir Guzov</a>*, <strong>Aymen Mir*</strong>, <a href="https://tsattler.github.io/">Torsten Sattler</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: CVPR 
-    conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
     pdf: https://arxiv.org/abs/2103.17265
     page: https://virtualhumans.mpi-inf.mpg.de/hps/
     code: https://github.com/miraymen/hps
@@ -130,7 +130,7 @@ main:
   - title: Learning to Transfer Texture from Clothing Images to 3D Humans
     authors: <strong>Aymen Mir</strong>, <a href="https://research.google/people/107250/">Thiemo Alldieck</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>
     conference_short: CVPR 
-    conference: IEEE/CVF International Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     pdf: https://arxiv.org/abs/2003.02050
     page: https://virtualhumans.mpi-inf.mpg.de/pix2surf/
     code: https://github.com/miraymen/pix2surf
