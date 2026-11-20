@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICLR 2027 Score Percentiles</title>
+<meta name="description" content="Where an ICLR 2027 submission stands by its review scores: papers above, tied and below by the plain average and by the confidence-weighted average.">
+<link rel="icon" href="../assets/img/favicon.png">
+<script>
+  (function () { try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@600;700&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BXH2966VL8"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-BXH2966VL8");</script>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f3f5f7; --card: #ffffff; --border: #e8ecf1; --text: #444; --heading: #1a1a1a; --muted: #6b6b6b;
+    --accent: #1772d0; --accent-2: #0e57a3; --bar: #aeb9c6; --grid: #e8ecf1; --hi: rgba(23, 114, 208, 0.08);
+    --input: #ffffff; --tip-bg: #1a1a1a; --tip-text: #ffffff;
+    --shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 6px 18px rgba(16, 24, 40, 0.07);
+    --rule: linear-gradient(90deg, #c9cdd3, #989fa8, #c9cdd3);
+  }
+  @media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #1b1c25; --card: #262837; --border: #343649; --text: #dadbdf; --heading: #e8e8e8; --muted: #a6a7ad;
+      --accent: #58a6ff; --accent-2: #79b8ff; --bar: #4f5872; --grid: #343649; --hi: rgba(88, 166, 255, 0.12);
+      --input: #20212b; --tip-bg: #e8e8e8; --tip-text: #1a1a1a;
+      --shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+      --rule: linear-gradient(90deg, #565b64, #9aa1ab, #565b64);
+    }
+  }
+  html[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #1b1c25; --card: #262837; --border: #343649; --text: #dadbdf; --heading: #e8e8e8; --muted: #a6a7ad;
+    --accent: #58a6ff; --accent-2: #79b8ff; --bar: #4f5872; --grid: #343649; --hi: rgba(88, 166, 255, 0.12);
+    --input: #20212b; --tip-bg: #e8e8e8; --tip-text: #1a1a1a;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    --rule: linear-gradient(90deg, #565b64, #9aa1ab, #565b64);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 40px 16px 32px; background: var(--bg); color: var(--text); font: 15px/1.55 Lato, "Helvetica Neue", Arial, sans-serif; }
+  .wrapper { max-width: 850px; margin: 0 auto; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); padding: 22px 26px; margin-bottom: 18px; }
+  h1, h2, h3 { font-family: "Avenir Next", Avenir, "Nunito Sans", Lato, sans-serif; font-weight: 600; color: var(--heading); }
+  h1 { font-size: 1.75rem; margin: 4px 0 10px; line-height: 1.25; }
+  h2 { font-size: 1.15rem; margin: 0 0 14px; }
+  h2::after { content: ""; display: block; width: 44px; height: 2.5px; border-radius: 2px; margin-top: 7px; background: var(--rule); }
+  h3 { font-size: 0.98rem; margin: 18px 0 8px; }
+  p { margin: 0 0 10px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-2); text-decoration: underline; }
+  .muted { color: var(--muted); }
+  .small { font-size: 0.88rem; }
+  .back { font-size: 0.85rem; font-weight: 700; }
+  code { font-size: 0.9em; }
+
+  #theme-toggle { position: fixed; top: 14px; right: 14px; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--card); color: var(--text); cursor: pointer; box-shadow: var(--shadow); display: grid; place-items: center; z-index: 5; }
+  #theme-toggle svg { width: 18px; height: 18px; }
+
+  label.lab { display: block; font-weight: 700; color: var(--heading); margin-bottom: 6px; }
+  input[type=text] { width: 100%; padding: 10px 12px; font: inherit; color: var(--text); background: var(--input); border: 1px solid var(--border); border-radius: 10px; }
+  input[type=text]:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: transparent; }
+  .row { display: flex; gap: 8px; align-items: stretch; }
+  .row input { flex: 1; min-width: 0; }
+  button.btn { font: inherit; font-weight: 700; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--accent); cursor: pointer; white-space: nowrap; }
+  button.btn:hover { background: var(--hi); }
+  details { margin-top: 14px; }
+  summary { cursor: pointer; color: var(--accent); font-weight: 700; }
+  #results { list-style: none; margin: 8px 0 0; padding: 0; }
+  #results button { display: block; width: 100%; text-align: left; font: inherit; color: var(--text); background: none; border: 0; border-radius: 8px; padding: 7px 10px; cursor: pointer; }
+  #results button:hover, #results button:focus-visible { background: var(--hi); outline: none; }
+  #results .t { color: var(--heading); font-weight: 700; display: block; }
+  #results .m { color: var(--muted); font-size: 0.85rem; }
+  .scope { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 0.92rem; }
+  .scope b { color: var(--heading); }
+  .scope label { cursor: pointer; }
+  .msg { min-height: 1.2em; margin-top: 8px; font-size: 0.9rem; color: var(--muted); }
+
+  .ptitle { font-size: 1.12rem; font-weight: 700; color: var(--heading); margin: 0 0 4px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+  .chip { border: 1px solid var(--border); border-radius: 999px; padding: 3px 12px; font-size: 0.88rem; }
+  .chip b { color: var(--heading); }
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+  .tile { border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+  .tile .l { font-size: 0.85rem; color: var(--muted); }
+  .tile .v { font-family: "Avenir Next", Avenir, "Nunito Sans", Lato, sans-serif; font-weight: 600; font-size: 1.6rem; color: var(--heading); line-height: 1.2; margin: 2px 0; }
+  .tile .s { font-size: 0.85rem; }
+  .tile.main { border-color: var(--accent); }
+
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  th { text-align: left; font-weight: 700; color: var(--muted); font-size: 0.82rem; padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  td.n, th.n { text-align: right; white-space: nowrap; }
+  tr.hi td { background: var(--hi); }
+  tr.hi td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+  tr:last-child td { border-bottom: 0; }
+  .barcell { width: 34%; min-width: 90px; }
+  .bt { height: 10px; border-radius: 0 4px 4px 0; background: var(--bar); min-width: 1px; }
+  tr.hi .bt { background: var(--accent); }
+  .you { font-size: 0.78rem; font-weight: 700; color: var(--accent); margin-left: 6px; white-space: nowrap; }
+
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .chart h3 { margin-top: 0; }
+  .chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .chart .ax { fill: var(--muted); font: 11px Lato, sans-serif; }
+  .chart .lbl { fill: var(--heading); font: 700 11px Lato, sans-serif; }
+  .chart .grid { stroke: var(--grid); stroke-width: 1; shape-rendering: crispEdges; }
+  .chart .b { fill: var(--bar); }
+  .chart .b.hi { fill: var(--accent); }
+  .chart .hit { fill: transparent; cursor: default; outline: none; }
+  .chart g.on .b { opacity: 0.75; }
+  #tip { position: fixed; pointer-events: none; z-index: 10; background: var(--tip-bg); color: var(--tip-text); border-radius: 8px; padding: 6px 10px; font-size: 0.82rem; line-height: 1.35; max-width: 240px; opacity: 0; transition: opacity 0.08s; }
+  #tip b { font-size: 0.95rem; }
+  #tip .k { display: inline-block; width: 12px; height: 2px; background: currentColor; vertical-align: middle; margin-right: 6px; opacity: 0.7; }
+
+  footer { text-align: center; color: var(--muted); font-size: 0.82rem; margin: 26px 0 0; }
+  [hidden] { display: none !important; }
+
+  @media (max-width: 640px) {
+    body { padding-top: 60px; }
+    .card { padding: 18px 16px; }
+    .tiles { grid-template-columns: 1fr; }
+    .charts { grid-template-columns: 1fr; }
+    h1 { font-size: 1.45rem; }
+    table { font-size: 0.86rem; }
+    th, td { padding: 5px 4px; }
+    .barcell { min-width: 36px; width: 22%; }
+    .you { display: block; margin: 2px 0 0; }
+  }
+</style>
+</head>
+<body>
+<button id="theme-toggle" type="button" aria-label="Switch between light and dark">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+</button>
+<div id="tip" role="status" aria-live="polite"></div>
+
+<div class="wrapper">
+  <header class="card">
+    <a class="back" href="../">← Aymen Mir</a>
+    <h1>ICLR 2027 score percentiles</h1>
+    <p>Look up an ICLR 2027 submission by its OpenReview link, id or title, or type in a set of scores. The page shows where the paper stands among all submissions: how many papers are above it, tied with it and below it, by the plain average of its ratings and by the average weighted by each reviewer's confidence.</p>
+    <p class="muted small" id="dataline">Loading the scores…</p>
+  </header>
+
+  <section class="card" id="find">
+    <label class="lab" for="q">Paper: OpenReview link, id or title</label>
+    <input type="text" id="q" autocomplete="off" spellcheck="false" placeholder="e.g. https://openreview.net/forum?id=… or words from the title" disabled>
+    <ul id="results"></ul>
+    <details id="manual">
+      <summary>Or type in scores</summary>
+      <p class="small muted" style="margin-top:8px">One <code>rating:confidence</code> per review, e.g. <code>3:3, 3:3, 2:2</code>. Both run from 1 to 4.</p>
+      <div class="row">
+        <input type="text" id="mscores" autocomplete="off" spellcheck="false" placeholder="3:3, 3:3, 2:2" aria-label="Scores as rating:confidence per review">
+        <button class="btn" id="mgo" type="button">Compare</button>
+      </div>
+    </details>
+    <div class="msg" id="msg" aria-live="polite"></div>
+    <div class="scope" role="radiogroup" aria-label="Compare against">
+      <b>Compare against</b>
+      <label><input type="radio" name="scope" value="all" checked> <span id="sc-all">all papers</span></label>
+      <label><input type="radio" name="scope" value="review"> <span id="sc-review">papers still under review</span></label>
+    </div>
+  </section>
+
+  <div id="out" hidden>
+    <section class="card" id="paper"></section>
+    <section class="card" id="rank"></section>
+    <section class="card" id="tier"></section>
+    <section class="card" id="set"></section>
+  </div>
+
+  <section class="card" id="dist">
+    <h2>All papers by score</h2>
+    <p class="small muted" id="dist-note">Papers per 0.1 of the average.</p>
+    <div class="charts">
+      <div class="chart"><h3>Average</h3><div id="h-avg"></div></div>
+      <div class="chart"><h3>Confidence-weighted average</h3><div id="h-w"></div></div>
+    </div>
+    <h3>Percentiles</h3>
+    <div class="scroll"><table id="pct"></table></div>
+  </section>
+
+  <section class="card" id="about">
+    <h2>How it's computed</h2>
+    <p><b>Average:</b> the mean of the paper's ratings. <b>Confidence-weighted average:</b> each rating counts in proportion to its reviewer's confidence,</p>
+    <p style="text-align:center"><code>Σ (rating × confidence) / Σ confidence</code></p>
+    <p>For example, ratings 3, 3 and 2 with confidences 3, 3 and 2 give (9 + 9 + 4) / 8 = 2.75, against a plain average of 2.67: the reject counts for 2/8 of the weight instead of a third. When all reviewers are equally confident, the two averages are the same.</p>
+    <p><b>Top X %</b> counts the papers tied with this one as level with it: (papers above + papers tied + 1) / all papers. <b>Ties broken by confidence</b> ranks by the average first and uses the weighted average only among papers with the same average.</p>
+    <p><b>Who gave the lowest score</b> compares the confidence of the reviewer(s) with the lowest rating with the confidence of the others.</p>
+    <p class="muted small">Area chairs decide from the reviews and the discussion, not from an average; this page only places the scores. Scores change while reviewers edit their reviews: they are as of the download time above.</p>
+  </section>
+
+  <footer>Data: public reviews on OpenReview. Not affiliated with ICLR or OpenReview. · <a href="../">Aymen Mir</a></footer>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const $ = s => document.querySelector(s);
+  const EPS = 1e-9;
+  const STATUS = ["under review", "withdrawn", "desk-rejected"];
+  const nf = n => n.toLocaleString("en-GB");
+  const pc = x => (x * 100).toFixed(1) + "%";
+  const f2 = x => x.toFixed(2), f3 = x => x.toFixed(3);
+
+  let P = [], BYID = new Map(), SCOPE = "all", CUR = null, DOWNLOADED = "";
+
+  // ---------- small DOM helpers (titles are data: always textContent) ----------
+  function el(tag, props, ...kids) {
+    const e = document.createElement(tag);
+    if (props) for (const [k, v] of Object.entries(props)) {
+      if (v == null || v === false) continue;
+      if (k === "class") e.className = v;
+      else if (k === "text") e.textContent = v;
+      else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+      else e.setAttribute(k, v);
+    }
+    for (const k of kids.flat()) if (k != null && k !== false) e.append(k instanceof Node ? k : String(k));
+    return e;
+  }
+  function sv(tag, attrs) {
+    const e = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (const [k, v] of Object.entries(attrs || {})) e.setAttribute(k, v);
+    return e;
+  }
+
+  // ---------- theme toggle (same localStorage key as the homepage) ----------
+  $("#theme-toggle").addEventListener("click", () => {
+    const cur = document.documentElement.getAttribute("data-theme");
+    const dark = cur ? cur === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    const next = dark ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
+  // ---------- scores ----------
+  function scores(r, c) {
+    const sr = r.reduce((a, b) => a + b, 0), sc = c.reduce((a, b) => a + b, 0);
+    return { avg: sr / r.length, w: sc ? r.reduce((s, x, i) => s + x * c[i], 0) / sc : sr / r.length };
+  }
+  const setKey = p => [...p.r].sort((a, b) => b - a).join("");
+  const pairs = p => p.r.map((x, i) => [x, p.c[i]]).sort((a, b) => b[0] - a[0] || b[1] - a[1]);
+  const comboKey = p => pairs(p).map(([a, b]) => a + ":" + b).join(" · ");
+  const ratingsLabel = p => [...p.r].sort((a, b) => b - a).join(" · ");
+  const inScope = p => SCOPE === "all" || p.st === 0;
+
+  const CASES = [
+    "Lowest score from the most confident reviewer",
+    "Lowest score more confident than the others on average",
+    "All reviewers equally confident",
+    "Mixed: the same confidence on average",
+    "Lowest score less confident than the others on average",
+    "Lowest score from the least confident reviewer",
+  ];
+  function caseOf(p) {
+    if (new Set(p.c).size === 1) return 2;
+    const lo = Math.min(...p.r);
+    const clo = p.c.filter((_, i) => p.r[i] === lo), co = p.c.filter((_, i) => p.r[i] !== lo);
+    if (Math.min(...clo) > Math.max(...co)) return 0;
+    if (Math.max(...clo) < Math.min(...co)) return 5;
+    const m = a => a.reduce((s, x) => s + x, 0) / a.length;
+    if (m(clo) > m(co) + EPS) return 1;
+    if (m(clo) < m(co) - EPS) return 4;
+    return 3;
+  }
+
+  function quantile(sorted, q) {
+    const k = (sorted.length - 1) * q, lo = Math.floor(k), hi = Math.min(lo + 1, sorted.length - 1);
+    return sorted[lo] + (sorted[hi] - sorted[lo]) * (k - lo);
+  }
+
+  // ---------- loading ----------
+  fetch("data.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }).then(d => {
+    DOWNLOADED = d.downloaded;
+    P = d.papers.map(([id, title, rs, cs, st], i) => {
+      const r = [...rs].map(Number), c = [...cs].map(Number);
+      return Object.assign({ i, id, title, t: title.toLowerCase(), r, c, st }, scores(r, c));
+    });
+    for (const p of P) BYID.set(p.id, p);
+    const n = [0, 0, 0]; for (const p of P) n[p.st]++;
+    $("#dataline").textContent = `Scores as they stood on OpenReview on ${DOWNLOADED}: ${nf(P.length)} submissions with at least one review (${nf(n[0])} under review, ${nf(n[1])} withdrawn, ${nf(n[2])} desk-rejected). Ratings and reviewer confidence both run from 1 to 4.`;
+    $("#sc-all").textContent = `all ${nf(P.length)} papers`;
+    $("#sc-review").textContent = `the ${nf(n[0])} still under review (without withdrawn and desk-rejected)`;
+    $("#q").disabled = false;
+    fromHash();
+    renderAll();
+  }).catch(e => {
+    $("#dataline").textContent = `Couldn't load the scores (${e.message}). Reload the page to try again.`;
+  });
+
+  // ---------- search ----------
+  function matches(q) {
+    q = q.trim();
+    if (!q) return [];
+    const m = q.match(/[?&]id=([A-Za-z0-9_-]+)/);
+    if (m) q = m[1];
+    if (BYID.has(q)) return [BYID.get(q)];
+    const ql = q.toLowerCase(), toks = ql.split(/\s+/).filter(Boolean), out = [];
+    for (const p of P) if (toks.every(t => p.t.includes(t))) out.push(p);
+    out.sort((a, b) => (b.t === ql) - (a.t === ql) || b.t.startsWith(ql) - a.t.startsWith(ql) || a.title.length - b.title.length);
+    return out;
+  }
+  let qTimer = 0;
+  $("#q").addEventListener("input", () => { clearTimeout(qTimer); qTimer = setTimeout(search, 120); });
+  $("#q").addEventListener("keydown", e => {
+    if (e.key === "Enter") { const first = $("#results button"); if (first) first.click(); }
+  });
+  function search() {
+    const q = $("#q").value, list = $("#results");
+    list.replaceChildren();
+    $("#msg").textContent = "";
+    if (q.trim().length < 2) return;
+    const res = matches(q);
+    if (res.length === 1 && (BYID.has(q.trim()) || /[?&]id=/.test(q))) { choose(res[0]); return; }
+    if (!res.length) { $("#msg").textContent = "No paper matches. Papers without any review aren't in the data."; return; }
+    for (const p of res.slice(0, 10)) {
+      list.append(el("li", null, el("button", { type: "button", onclick: () => choose(p) },
+        el("span", { class: "t", text: p.title }),
+        el("span", { class: "m", text: `${STATUS[p.st]} · ratings ${ratingsLabel(p)} · average ${f2(p.avg)}` }))));
+    }
+    if (res.length > 10) $("#msg").textContent = `${nf(res.length - 10)} more match; type more of the title.`;
+  }
+  function choose(p) {
+    $("#results").replaceChildren();
+    $("#msg").textContent = "";
+    $("#q").value = p.title;
+    CUR = Object.assign({ idx: p.i }, p);
+    setHash();
+    renderAll();
+    $("#paper").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  // ---------- typed-in scores ----------
+  function parseScores(s) {
+    const r = [], c = [];
+    for (const m of s.matchAll(/([0-9]+)\s*[:\/]\s*([0-9]+)/g)) { r.push(+m[1]); c.push(+m[2]); }
+    if (!r.length || [...r, ...c].some(x => x < 1 || x > 4)) return null;
+    return { r, c };
+  }
+  function manual(s, quiet) {
+    const v = parseScores(s);
+    if (!v) { if (!quiet) $("#msg").textContent = "Type one rating:confidence per review, each from 1 to 4, e.g. 3:3, 3:3, 2:2."; return false; }
+    $("#msg").textContent = "";
+    CUR = Object.assign({ idx: -1, id: null, title: null, st: null }, v, scores(v.r, v.c));
+    setHash();
+    renderAll();
+    $("#paper").scrollIntoView({ behavior: "smooth", block: "start" });
+    return true;
+  }
+  $("#mgo").addEventListener("click", () => manual($("#mscores").value));
+  $("#mscores").addEventListener("keydown", e => { if (e.key === "Enter") manual($("#mscores").value); });
+
+  for (const r of document.querySelectorAll("input[name=scope]")) r.addEventListener("change", () => { SCOPE = r.value; setHash(); renderAll(); });
+
+  // ---------- link to a result (#id=… or #r=3:3,3:3,2:2; &scope=review) ----------
+  function setHash() {
+    const parts = [];
+    if (CUR) parts.push(CUR.idx >= 0 ? "id=" + CUR.id : "r=" + CUR.r.map((x, i) => x + ":" + CUR.c[i]).join(","));
+    if (SCOPE === "review") parts.push("scope=review");
+    history.replaceState(null, "", parts.length ? "#" + parts.join("&") : location.pathname);
+  }
+  function fromHash() {
+    const h = new URLSearchParams(location.hash.slice(1));
+    if (h.get("scope") === "review") { SCOPE = "review"; document.querySelector("input[value=review]").checked = true; }
+    const id = h.get("id"), r = h.get("r"), q = h.get("q");
+    if (q && !id && !r) { $("#q").value = q; search(); }
+    if (id && BYID.has(id)) { const p = BYID.get(id); CUR = Object.assign({ idx: p.i }, p); $("#q").value = p.title; }
+    else if (r) { const v = parseScores(r); if (v) { CUR = Object.assign({ idx: -1, id: null, title: null, st: null }, v, scores(v.r, v.c)); $("#mscores").value = r.replace(/,/g, ", "); $("#manual").open = true; } }
+  }
+
+  // ---------- rendering ----------
+  function renderAll() {
+    if (!P.length) return;
+    const scope = P.filter(inScope);
+    renderDist(scope);
+    if (!CUR) { $("#out").hidden = true; return; }
+    $("#out").hidden = false;
+    const p = CUR, inS = p.idx >= 0 && inScope(P[p.idx]);
+    const others = inS ? scope.filter(q => q.i !== p.idx) : scope;
+    const N = others.length + 1;
+    renderPaper(p, inS, others, N);
+    renderTier(p, others, N);
+    renderSet(p, others);
+  }
+
+  function counts(p, others) {
+    let pa = 0, pt = 0, wa = 0, wt = 0, ca = 0, ct = 0;
+    for (const q of others) {
+      const dp = q.avg - p.avg, dw = q.w - p.w;
+      if (dp > EPS) pa++;
+      else if (dp >= -EPS) { pt++; if (dw > EPS) ca++; else if (dw >= -EPS) ct++; }
+      if (dw > EPS) wa++; else if (dw >= -EPS) wt++;
+    }
+    const n = others.length;
+    return {
+      plain: { above: pa, tied: pt, below: n - pa - pt },
+      weighted: { above: wa, tied: wt, below: n - wa - wt },
+      combined: { above: pa + ca, tied: ct, below: n - pa - ca - ct },
+    };
+  }
+
+  function renderPaper(p, inS, others, N) {
+    const sec = $("#paper"), k = counts(p, others);
+    const top = c => (c.above + c.tied + 1) / N, best = c => (c.above + 1) / N, beats = c => c.below / N;
+    sec.replaceChildren();
+    if (p.idx >= 0) {
+      sec.append(el("h2", { text: "This paper" }),
+        el("p", { class: "ptitle" }, el("a", { href: "https://openreview.net/forum?id=" + encodeURIComponent(p.id), target: "_blank", rel: "noopener", text: p.title })),
+        el("p", { class: "small muted", text: `OpenReview id ${p.id} · ${STATUS[p.st]} · ${p.r.length} review${p.r.length > 1 ? "s" : ""}` }));
+    } else {
+      sec.append(el("h2", { text: "These scores" }), el("p", { class: "small muted", text: `${p.r.length} review${p.r.length > 1 ? "s" : ""}, typed in` }));
+    }
+    sec.append(el("div", { class: "chips" }, pairs(p).map(([a, b]) => el("span", { class: "chip" }, "rating ", el("b", { text: a }), " · confidence ", el("b", { text: b })))));
+    if (!inS) sec.append(el("p", { class: "small muted", text: p.idx >= 0
+      ? `This paper is ${STATUS[p.st]}, so it isn't one of the papers compared against; it is placed among them as an extra paper.`
+      : "Placed among the papers as an extra paper." }));
+    const tile = (label, c, main, extra) => el("div", { class: "tile" + (main ? " main" : "") },
+      el("div", { class: "l", text: label }),
+      el("div", { class: "v", text: "Top " + pc(top(c)) }),
+      el("div", { class: "s muted", text: extra + ` · beats ${pc(beats(c))}` }));
+    sec.append(el("div", { class: "tiles" },
+      tile(`By average (${f2(p.avg)})`, k.plain, false, `${nf(k.plain.tied)} tied`),
+      tile(`By confidence-weighted average (${f2(p.w)})`, k.weighted, true, `${nf(k.weighted.tied)} tied`),
+      tile("By average, ties broken by confidence", k.combined, false, `${nf(k.combined.tied)} tied`)));
+
+    const r = $("#rank");
+    r.replaceChildren(el("h2", { text: "Papers above, tied and below" }),
+      el("p", { class: "small muted", text: `Among ${nf(N)} papers (${SCOPE === "all" ? "all papers" : "papers still under review"}${inS ? ", this one included" : ", with this one added"}).` }));
+    const row = (label, value, c) => el("tr", null,
+      el("td", null, el("b", { text: label }), el("br"), el("span", { class: "small muted", text: value })),
+      el("td", { class: "n" }, nf(c.above), el("br"), el("span", { class: "small muted", text: pc(c.above / N) })),
+      el("td", { class: "n" }, nf(c.tied), el("br"), el("span", { class: "small muted", text: pc(c.tied / N) })),
+      el("td", { class: "n" }, nf(c.below), el("br"), el("span", { class: "small muted", text: pc(c.below / N) })),
+      el("td", { class: "n" }, el("b", { text: pc(top(c)) }), el("br"), el("span", { class: "small muted", text: "best " + pc(best(c)) })));
+    r.append(el("div", { class: "scroll" }, el("table", null,
+      el("thead", null, el("tr", null, el("th", { text: "Ranked by" }), el("th", { class: "n", text: "Above" }), el("th", { class: "n", text: "Tied" }),
+        el("th", { class: "n", text: "Below" }), el("th", { class: "n", text: "Top" }))),
+      el("tbody", null,
+        row("Average", f3(p.avg), k.plain),
+        row("Confidence-weighted average", f3(p.w), k.weighted),
+        row("Average, ties broken by confidence", `${f3(p.avg)}, then ${f3(p.w)}`, k.combined)))),
+      el("p", { class: "small muted", style: "margin-top:10px", text: "Top counts the tied papers as level with this one; best puts it ahead of all of them. Tied counts other papers only." }));
+  }
+
+  // bar-table: rows [{label, n, hi}], shares of total, cumulative from the top
+  function barTable(headers, rows, total, cum) {
+    const max = Math.max(...rows.map(r => r.n), 1);
+    let run = 0;
+    return el("div", { class: "scroll" }, el("table", null,
+      el("thead", null, el("tr", null, headers.map((h, i) => el("th", { class: i ? "n" : null, text: h })), el("th", { class: "barcell" }))),
+      el("tbody", null, rows.map(r => {
+        run += r.n;
+        return el("tr", { class: r.hi ? "hi" : null },
+          el("td", null, r.label, r.hi ? el("span", { class: "you", text: r.youText || "← this paper" }) : null),
+          el("td", { class: "n", text: nf(r.n) }),
+          el("td", { class: "n", text: pc(r.n / total) }),
+          cum ? el("td", { class: "n", text: pc(run / total) }) : null,
+          el("td", { class: "barcell" }, el("div", { class: "bt", style: `width:${(r.n / max * 100).toFixed(1)}%` })));
+      }))));
+  }
+
+  function renderTier(p, others, N) {
+    const sec = $("#tier");
+    const tier = others.filter(q => Math.abs(q.avg - p.avg) < EPS);
+    const ws = tier.map(q => q.w).concat([p.w]);
+    const total = ws.length;
+    let above = 0, tied = 0;
+    for (const q of tier) { if (q.w > p.w + EPS) above++; else if (q.w >= p.w - EPS) tied++; }
+    const below = tier.length - above - tied;
+    // rows: each distinct weighted value, or 0.05-wide bins when there are many
+    const distinct = new Map();
+    for (const w of ws) { const key = Math.round(w * 1e6); distinct.set(key, (distinct.get(key) || 0) + 1); }
+    let rows;
+    if (distinct.size <= 30) {
+      rows = [...distinct.entries()].sort((a, b) => b[0] - a[0]).map(([key, n]) => ({ label: f3(key / 1e6), n, hi: Math.abs(key / 1e6 - p.w) < 1e-6 }));
+    } else {
+      const bins = new Map();
+      for (const w of ws) { const b = Math.floor(w / 0.05 + 1e-9); bins.set(b, (bins.get(b) || 0) + 1); }
+      const pb = Math.floor(p.w / 0.05 + 1e-9);
+      rows = [...bins.entries()].sort((a, b) => b[0] - a[0]).map(([b, n]) => ({ label: `${f2(b * 0.05)} to ${f2((b + 1) * 0.05)}`, n, hi: b === pb }));
+    }
+    sec.replaceChildren(
+      el("h2", { text: `Papers with the same average (${f2(p.avg)})` }),
+      el("p", null, `${nf(total)} papers have an average of ${f3(p.avg)} (${pc(total / N)} of all). By confidence-weighted average, `,
+        el("b", { text: nf(above) }), " of the others are above this one, ", el("b", { text: nf(tied) }), " tied and ", el("b", { text: nf(below) }),
+        " below: it is in the ", el("b", { text: "top " + pc((above + tied + 1) / total) }), " of them."),
+      el("p", { class: "small muted", text: distinct.size <= 30 ? "Weighted average of the papers with this average:" : "Weighted average of the papers with this average, in steps of 0.05:" }),
+      barTable(["Weighted", "Papers", "Share", "From top"], rows, total, true));
+  }
+
+  function renderSet(p, others) {
+    const sec = $("#set"), key = setKey(p);
+    const grp = others.filter(q => setKey(q) === key).concat([p]);
+    const total = grp.length, lab = ratingsLabel(p);
+    sec.replaceChildren(el("h2", { text: `Papers with the same ratings (${lab})` }));
+    if (new Set(p.r).size === 1) {
+      sec.append(el("p", { text: `${nf(total)} papers have exactly these ratings. All reviewers gave the same score, so there is no lowest score to compare.` }));
+    } else {
+      const n = CASES.map(() => 0); for (const q of grp) n[caseOf(q)]++;
+      const mine = caseOf(p);
+      sec.append(el("p", { text: `${nf(total)} papers have exactly these ratings. Who gave the lowest score:` }),
+        barTable(["", "Papers", "Share"], CASES.map((c, i) => ({ label: c, n: n[i], hi: i === mine })), total, false));
+    }
+    const combos = new Map();
+    for (const q of grp) { const k = comboKey(q); combos.set(k, (combos.get(k) || 0) + 1); }
+    const sorted = [...combos.entries()].sort((a, b) => b[1] - a[1]);
+    const mk = comboKey(p), rank = sorted.findIndex(([k]) => k === mk);
+    const wOf = k => { const pr = k.split(" · ").map(s => s.split(":").map(Number)); return pr.reduce((s, [a, b]) => s + a * b, 0) / pr.reduce((s, [, b]) => s + b, 0); };
+    const lab2 = k => el("span", null, k, el("span", { class: "small muted", text: ` · weighted ${f2(wOf(k))}` }));
+    const rows = sorted.slice(0, 10).map(([k, n]) => ({ label: lab2(k), n, hi: k === mk }));
+    if (rank >= 10) rows.push({ label: lab2(mk), n: sorted[rank][1], hi: true, youText: `← this paper (#${rank + 1} of ${sorted.length})` });
+    sec.append(el("h3", { text: "Most common ratings with confidences (rating:confidence)" }),
+      barTable(["Ratings with confidences", "Papers", "Share"], rows, total, false));
+  }
+
+  // ---------- histograms ----------
+  const tip = $("#tip");
+  function showTip(evt, html) {
+    tip.replaceChildren(...html);
+    tip.style.opacity = 1;
+    const r = evt.target.getBoundingClientRect ? evt.target.getBoundingClientRect() : null;
+    const x = evt.clientX != null && evt.type !== "focus" ? evt.clientX : (r ? r.left + r.width / 2 : 0);
+    const y = evt.clientY != null && evt.type !== "focus" ? evt.clientY : (r ? r.top : 0);
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(innerWidth - tw - 8, x - tw / 2)) + "px";
+    tip.style.top = Math.max(8, y - th - 12) + "px";
+  }
+  const hideTip = () => { tip.style.opacity = 0; };
+
+  const NB = 30, LO = 1, STEP = 0.1;
+  const binOf = v => Math.max(0, Math.min(NB - 1, Math.floor((v - LO) / STEP + 1e-9)));
+  function histogram(box, values, mark, yMax, total, what) {
+    // drawn at the box's real width, so the 11px labels stay 11px (no scaling)
+    const W = Math.max(260, Math.round(box.clientWidth || 400)), H = 200, L = 40, R = 6, T = 22, B = 26, pw = W - L - R, ph = H - T - B;
+    const cnt = new Array(NB).fill(0); for (const v of values) cnt[binOf(v)]++;
+    const slot = pw / NB, bw = Math.min(24, slot - 2), mb = mark == null ? -1 : binOf(mark);
+    const svg = sv("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img", "aria-label": `${what}: papers per 0.1 of the score` });
+    const step = [100, 200, 250, 500, 1000, 2000, 2500, 5000, 10000, 20000].find(s => yMax / s <= 4) || 50000;
+    const top = Math.ceil(yMax / step) * step, y = v => T + ph - v / top * ph;
+    const yl = v => (top >= 10000 && v ? (v / 1000) + "K" : nf(v));
+    for (let v = 0; v <= top + 1e-9; v += step) {
+      svg.append(sv("line", { class: "grid", x1: L, x2: W - R, y1: y(v), y2: y(v) }));
+      const t = sv("text", { class: "ax", x: L - 6, y: y(v) + 4, "text-anchor": "end" }); t.textContent = yl(v); svg.append(t);
+    }
+    for (const v of [1, 1.5, 2, 2.5, 3, 3.5, 4]) {
+      const t = sv("text", { class: "ax", x: L + (v - LO) / STEP * slot, y: H - 8, "text-anchor": "middle" }); t.textContent = v.toFixed(1); svg.append(t);
+    }
+    for (let b = 0; b < NB; b++) {
+      const x = L + b * slot + (slot - bw) / 2, h = cnt[b] / top * ph, base = T + ph, g = sv("g");
+      if (h > 0) {
+        const rad = Math.min(4, bw / 2, h), yt = base - h;
+        g.append(sv("path", { class: "b" + (b === mb ? " hi" : ""), d: `M${x},${base}V${yt + rad}Q${x},${yt} ${x + rad},${yt}H${x + bw - rad}Q${x + bw},${yt} ${x + bw},${yt + rad}V${base}Z` }));
+      }
+      const lo = LO + b * STEP, hi = lo + STEP;
+      const hit = sv("rect", { class: "hit", x: L + b * slot, y: T, width: slot, height: ph, tabindex: 0,
+        "aria-label": `${what} ${lo.toFixed(1)} to ${hi.toFixed(1)}: ${nf(cnt[b])} papers` });
+      const content = () => [el("b", { text: nf(cnt[b]) + " papers" }), el("br"),
+        el("span", null, el("span", { class: "k" }), `${what} ${lo.toFixed(1)} to ${hi.toFixed(1)}${b === NB - 1 ? " (incl. 4.0)" : ""} · ${pc(cnt[b] / total)}`)];
+      const on = e => { g.classList.add("on"); showTip(e, content()); }, off = () => { g.classList.remove("on"); hideTip(); };
+      hit.addEventListener("pointermove", on); hit.addEventListener("pointerleave", off);
+      hit.addEventListener("focus", on); hit.addEventListener("blur", off);
+      g.append(hit);
+      svg.append(g);
+    }
+    if (mb >= 0) {
+      const cx = L + mb * slot + slot / 2, h = cnt[mb] / top * ph;
+      const t = sv("text", { class: "lbl", x: cx, y: Math.max(12, T + ph - h - 6), "text-anchor": cx < L + 40 ? "start" : cx > W - 50 ? "end" : "middle" });
+      t.textContent = "this paper"; svg.append(t);
+    }
+    box.replaceChildren(svg);
+    return cnt;
+  }
+
+  function renderDist(scope) {
+    const mark = CUR || null;
+    const avgs = scope.map(p => p.avg), ws = scope.map(p => p.w);
+    const extra = CUR && !(CUR.idx >= 0 && inScope(P[CUR.idx]));
+    if (extra) { avgs.push(CUR.avg); ws.push(CUR.w); }
+    const c1 = new Array(NB).fill(0), c2 = new Array(NB).fill(0);
+    for (const v of avgs) c1[binOf(v)]++; for (const v of ws) c2[binOf(v)]++;
+    const yMax = Math.max(...c1, ...c2);
+    histogram($("#h-avg"), avgs, mark && mark.avg, yMax, avgs.length, "Average");
+    histogram($("#h-w"), ws, mark && mark.w, yMax, ws.length, "Weighted average");
+    $("#dist-note").textContent = `Papers per 0.1 of the score, ${SCOPE === "all" ? "all " + nf(scope.length) + " papers" : nf(scope.length) + " papers still under review"}${extra ? " plus this one" : ""}. Each bar covers its lower edge up to the next (the 2.6 bar holds 2.60 to 2.69…; 4.0 is in the last bar).${CUR ? " This paper's bar is highlighted." : ""}`;
+    // percentile table
+    const sa = [...avgs].sort((a, b) => a - b), sw = [...ws].sort((a, b) => a - b);
+    const qs = [0.25, 0.5, 0.75, 0.9, 0.95, 0.99];
+    const share = (arr, t) => arr.filter(v => v >= t - EPS).length / arr.length;
+    const words = { 0.25: "25th percentile", 0.5: "median", 0.75: "75th percentile", 0.9: "90th percentile", 0.95: "95th percentile", 0.99: "99th percentile" };
+    $("#pct").replaceChildren(
+      el("thead", null, el("tr", null, el("th"), el("th", { class: "n", text: "Average" }), el("th", { class: "n", text: "Weighted" }))),
+      el("tbody", null,
+        qs.map(q => el("tr", null, el("td", { text: words[q] }), el("td", { class: "n", text: f2(quantile(sa, q)) }), el("td", { class: "n", text: f2(quantile(sw, q)) }))),
+        [2.5, 3].map(t => el("tr", null, el("td", { text: `share at ${t} or above` }), el("td", { class: "n", text: pc(share(sa, t)) }), el("td", { class: "n", text: pc(share(sw, t)) })))));
+  }
+  let rTimer = 0, lastW = 0;
+  addEventListener("resize", () => {
+    clearTimeout(rTimer);
+    rTimer = setTimeout(() => { const w = $("#h-avg").clientWidth; if (w !== lastW && P.length) { lastW = w; renderDist(P.filter(inScope)); } }, 150);
+  });
+})();
+</script>
+</body>
+</html>
