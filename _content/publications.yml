@@ -30,6 +30,21 @@ main:
       }
     image: ./assets/img/raga.mp4
 
+  - title: "AvatarAnyone: Agentic Reconstruction of Mesh-Based Layered Avatars from YouTube Video"
+    authors: <strong>Aymen Mir</strong>, <a href="https://peterwonka.net/">Peter Wonka</a>, <a href="https://www.imperial.ac.uk/people/s.zafeiriou">Stefanos Zafeiriou</a>, <a href="https://alpguler.com/">Rıza Alp Güler</a>
+    conference_short:
+    conference:
+    pdf: https://arxiv.org/abs/2611.30777
+    page: https://miraymen.github.io/avataranyone/
+    bibtex: |
+      @article{mir2026avataranyone,
+        title   = {{AvatarAnyone: Agentic Reconstruction of Mesh-Based Layered Avatars from YouTube Video}},
+        author  = {Mir, Aymen and Wonka, Peter and Zafeiriou, Stefanos and Guler, Riza Alp},
+        journal = {arXiv preprint arXiv:2611.30777},
+        year    = {2026}
+      }
+    image: ./assets/img/avataranyone.mp4
+
   - title: AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting
     authors: <strong>Aymen Mir</strong>, <a href="https://jianwang-cmu.github.io/">Jian Wang</a>, <a href="https://alpguler.com/">Rıza Alp Güler</a>, <a href="https://ericguo5513.github.io/">Chuan Guo</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, <a href="https://zhoubinwy.github.io/">Bing Zhou</a>
     conference_short:  
